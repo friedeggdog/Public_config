@@ -1,0 +1,27 @@
+[Info  - 10:21:38 AM] (18002) Pylance language server 2023.5.30 (pyright e1b6074b) starting
+[Info  - 10:21:38 AM] (18002) Server root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist
+[Info  - 10:21:38 AM] (18002) Starting service instance "Documents"
+[Info  - 10:21:38 AM] (18002) Setting pythonPath for service "Documents": "/bin/python"
+[Warn  - 10:21:38 AM] (18002) stubPath /home/jagannathanm/Documents/typings is not a valid directory.
+[Info  - 10:21:38 AM] (18002) Assuming Python version 3.11
+[Info  - 10:21:40 AM] (18002) Found 5 source files
+[Info  - 10:21:41 AM] (18002) Background analysis(1) root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist
+[Info  - 10:21:41 AM] (18002) Background analysis(1) started
+[Info  - 10:21:41 AM] (18002) Indexer background runner(2) root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist (index)
+[Info  - 10:21:41 AM] (18002) Indexing(2) started
+[Info  - 10:21:43 AM] (18002) [BG(1)] Long operation: checking: /home/jagannathanm/Documents/task3/echo-clientzip.py (2190ms)
+[Info  - 10:21:43 AM] (18002) [BG(1)] Long operation: analyzing: /home/jagannathanm/Documents/task3/echo-clientzip.py (2624ms)
+[Info  - 10:21:45 AM] (18002) [IDX(2)] Long operation: scan packages /home/jagannathanm/Documents (4501ms)
+[Info  - 10:21:45 AM] (18002) scanned(2) 103 files over 1 exec env
+[Info  - 10:21:49 AM] (18002) [IDX(2)] Long operation: index execution environment /home/jagannathanm/Documents (3557ms)
+[Info  - 10:21:49 AM] (18002) [IDX(2)] Long operation: index packages /home/jagannathanm/Documents (3857ms)
+[Info  - 10:21:49 AM] (18002) indexed(2) 65 files over 1 exec env
+[Info  - 10:21:49 AM] (18002) Indexing finished(2).
+[Info  - 2:18:35 PM] (18002) Found 4 source files
+[Info  - 2:18:37 PM] (18002) [BG(1)] Long operation: checking: /home/jagannathanm/Documents/task3/echo-clientzip.py (2194ms)
+[Info  - 2:18:37 PM] (18002) [BG(1)] Long operation: analyzing: /home/jagannathanm/Documents/task3/echo-clientzip.py (2708ms)
+[Info  - 3:03:23 PM] (18002) Found 5 source files
+[Info  - 3:03:25 PM] (18002) [BG(1)] Long operation: checking: /home/jagannathanm/Documents/task3/echo-clientzip.py (2122ms)
+[Info  - 3:03:25 PM] (18002) [BG(1)] Long operation: analyzing: /home/jagannathanm/Documents/task3/echo-clientzip.py (2830ms)
+[Info  - 3:03:37 PM] (18002) Found 5 source files
+[Info  - 3:03:39 PM] (18002) [BG(1)] Long operation: getSemanticTokens full at /home/jagannathanm/Documents/task3/echo-serverdocker.py (2063ms)

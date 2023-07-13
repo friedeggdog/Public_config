@@ -1,0 +1,6 @@
+FROM ubuntu
+MAINTAINER friedeggwhale
+RUN apt-get update
+RUN apt-get install -y nano
+COPY . /opt/
+CMD ["/bin/bash"]

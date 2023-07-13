@@ -1,0 +1,3 @@
+From mysql
+COPY init.sql /docker-entrypoint-initdb.d/
+COPY StudentDetails.txt /var/lib/mysql-files/

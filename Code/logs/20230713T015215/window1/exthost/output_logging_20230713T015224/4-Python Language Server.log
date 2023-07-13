@@ -1,0 +1,17 @@
+[Info  - 1:52:33 AM] (371376) Pylance language server 2023.5.30 (pyright e1b6074b) starting
+[Info  - 1:52:33 AM] (371376) Server root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist
+[Info  - 1:52:33 AM] (371376) Starting service instance "Documents"
+[Info  - 1:52:33 AM] (371376) Setting pythonPath for service "Documents": "/bin/python"
+[Warn  - 1:52:33 AM] (371376) stubPath /home/jagannathanm/Documents/typings is not a valid directory.
+[Info  - 1:52:34 AM] (371376) Assuming Python version 3.11
+[Info  - 1:52:34 AM] (371376) Found 5 source files
+[Info  - 1:52:35 AM] (371376) Background analysis(1) root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist
+[Info  - 1:52:35 AM] (371376) Background analysis(1) started
+[Info  - 1:52:35 AM] (371376) Indexer background runner(2) root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist (index)
+[Info  - 1:52:35 AM] (371376) Indexing(2) started
+[Info  - 1:52:38 AM] (371376) [IDX(2)] Long operation: scan packages /home/jagannathanm/Documents (3579ms)
+[Info  - 1:52:38 AM] (371376) scanned(2) 104 files over 1 exec env
+[Info  - 1:52:42 AM] (371376) [IDX(2)] Long operation: index execution environment /home/jagannathanm/Documents (2912ms)
+[Info  - 1:52:42 AM] (371376) [IDX(2)] Long operation: index packages /home/jagannathanm/Documents (3085ms)
+[Info  - 1:52:42 AM] (371376) indexed(2) 66 files over 1 exec env
+[Info  - 1:52:42 AM] (371376) Indexing finished(2).

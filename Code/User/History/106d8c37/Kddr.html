@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>LOGIN</title>
+<style>
+    body {
+      background-color: #1e2124;
+    }
+    
+    h1 {
+      color: rgb(187, 187, 187);
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div id = "form">
+        <h1>Login</h1>
+        <form name="form1" action = "/endpage/" onsubmit = "return required()" method = "POST">
+            <p>
+                <label> Username: </label>
+                <input type = "text" id = "user" name = "user" />
+            </p>
+            <p>
+                <label> Password: </label>
+                <input type = "password" id = "pass" name = "pass" />
+            </p>
+            <p>
+                <input type =  "submit" id = "btn" value = "Login" />
+            </p>
+        </form>
+    </div>
+    <script>
+            function required()
+            {
+                var id=document.form1.user.value;
+                var ps=document.form1.pass.value;
+                if(id.length=="" || ps.length=="") {
+                    alert("Fields Empty");
+                    return false;
+                }
+            }
+    </script>
+</body>
+</html>

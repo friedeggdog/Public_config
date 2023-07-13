@@ -1,0 +1,8 @@
+FROM ubuntu
+MAINTAINER friedeggwhale
+RUN apt-get update
+RUN apt-get install -y nano
+COPY . /opt/
+RUN /bin/bash -c '/opt/genStudent.sh /opt/studentDetails.txt'
+RUN /bin/bash -c '/opt/setUp.sh'
+CMD ["/bin/bash"]

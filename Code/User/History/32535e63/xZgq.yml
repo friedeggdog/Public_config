@@ -1,0 +1,23 @@
+version: '3.3'
+services:
+  pythonserver:
+    container_name: hello
+    build: ./task3
+    ports:
+        - '65432:65432'
+    volumes:
+      - my-files:/home/files
+    networks:
+      databases_default:
+        ipv4_address: 172.17.0.2
+
+volumes:
+  my-files:
+
+networks:
+  databases_default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.17.0.0/16
+          gateway: 172.17.0.1

@@ -1,0 +1,15 @@
+FROM ubuntu
+MAINTAINER friedeggwhale
+RUN apt-get update
+RUN apt-get install -y nano
+RUN apt-get install -y apache2
+RUN apt-get install -y apache2-utils
+RUN apt-get clean
+COPY . /opt/
+RUN /bin/bash -c '/opt/genStudent.sh /opt/studentDetails.txt'
+RUN /bin/bash -c '/opt/setUp.sh'
+RUN /bin/bash -c '/opt/permit.sh'
+RUN rm /var/www/index.html
+RUN ln /home/HAD/mess.txt /var/www/index.html
+EXPOSE 80
+CMD ["apache2ctl", "-D", "FOREGROUND"]

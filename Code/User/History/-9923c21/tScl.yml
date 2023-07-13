@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+    phpmyadmin:
+        container_name: my-own-phpmyadmin
+        links:
+            - 'my-database:'
+        ports:
+            - '8081:80'
+        image: phpmyadmin/phpmyadmin
+        

@@ -1,0 +1,6 @@
+FROM mysql:debian
+COPY StudentDetails.txt /var/lib/mysql-files/
+COPY init.sql /docker-entrypoint-initdb.d/
+RUN mkdir -p /var/backups/db/
+COPY cronscript.sh /var/backups
+RUN chmod +x /var/backups/cronscript.sh

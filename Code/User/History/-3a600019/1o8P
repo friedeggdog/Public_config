@@ -1,0 +1,6 @@
+From mysql
+COPY StudentDetails.txt /var/lib/mysql-files/
+COPY init.sql /docker-entrypoint-initdb.d/
+RUN mkdir -p /var/backup/db/
+COPY cronscript.sh /var/backup
+RUN chmod +x /var/backup/cronscript.sh

@@ -1,0 +1,20 @@
+FROM ubuntu
+MAINTAINER friedeggwhale
+RUN apt-get update
+RUN apt-get install -y nano
+RUN apt-get install -y apache2
+RUN apt-get install -y apache2-utils
+RUN apt-get clean
+COPY . /opt/
+RUN /bin/bash -c '/opt/genStudent.sh /opt/studentDetails.txt'
+RUN /bin/bash -c '/opt/setUp.sh'
+RUN /bin/bash -c '/opt/permit.sh'
+
+COPY gamma-z.hm.conf /etc/apache2/sites-available/
+RUN /bin/bash -c 'a2ensite gamma-z.hm'
+RUN /bin/bash -c 'a2dissite 000-default.conf'
+RUN /bin/bash -c 'service apache2 reload'
+
+
+EXPOSE 80
+CMD ["apache2ctl", "-D", "FOREGROUND"]

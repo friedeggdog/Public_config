@@ -1,0 +1,6 @@
+{
+    "workbench.colorTheme": "Default Dark+ Experimental",
+    "[python]": {
+        "editor.formatOnType": true
+    }
+}

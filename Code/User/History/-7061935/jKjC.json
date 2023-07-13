@@ -1,0 +1,6 @@
+{
+    "workbench.colorTheme": "SynthWave '84",
+    "[python]": {
+        "editor.formatOnType": true
+    }
+}

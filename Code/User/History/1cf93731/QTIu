@@ -1,0 +1,7 @@
+FROM ubuntu
+MAINTAINER friedeggwhale
+RUN apt-get -y update
+RUN apt-get install -y python3
+RUN pip install pycryptodome
+COPY echo-serverdocker.py /
+CMD /bin/python /echo-serverdocker.py

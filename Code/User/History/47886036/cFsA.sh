@@ -1,0 +1,6 @@
+sudo bash -c "echo 'alias genStudent=\"/path/genStudent.sh\"' >> /etc/bash.bashrc"
+sudo bash -c "echo 'alias permit.sh=\"/path/permit.sh\"' >> /etc/bash.bashrc"
+sudo bash -c "echo 'alias updateDefaulter=\"/path/updateDefaulter.sh\"' >> /etc/bash.bashrc"
+sudo bash -c "echo 'alias messAllocation=\"/path/messAllocation.sh\"' >> /etc/bash.bashrc"
+sudo bash -c "echo 'alias feeBreakup=\"/path/feeBreakup.sh\"' >> /etc/bash.bashrc"
+sudo bash -c "echo 'alias signOut=\"/path/signOut.sh\"' >> /etc/bash.bashrc"

@@ -1,0 +1,115 @@
+[FileDialogSize]
+1920x1080 screen: Height=1046
+1920x1080 screen: Width=1920
+
+[KFileDialog Settings]
+Recent Files[$e]=Screenshot_2023-03-13_20-52-49.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/blinky_3.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/blinky_2.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/blinky_1.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/eos_xfcei3_1.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/eos_trails.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/eos_trails_1440p.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/eos_trails_4k.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/Endy_vector_EOS-planet_ultrawide.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/Endy_planet.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/Endy_planet_ARM.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/Endy_conquest_1140P_16-9_centered.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/APOLLO-ROCKET-FLAT.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/APOLLO-MOON.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/APOLLO-landing.jpg,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/Apollo-flight.jpg,file:///usr/share/backgrounds/xfce/xfce-blue.jpg,file:$HOME/Pictures/Screenshot_2023-03-13_20-52-49.png
+Recent URLs[$e]=file:$HOME/Pictures/,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/
+detailViewIconSize=16
+iconViewIconSize=64
+listViewIconSize=64
+
+[PlasmaTransientsConfig]
+PreloadWeight=0
+popupHeight=396
+popupWidth=396
+
+[PlasmaTransientsConfig][Applets][43]
+immutability=1
+plugin=org.kde.plasma.nightcolorcontrol
+
+[PlasmaTransientsConfig][Applets][43][Configuration]
+PreloadWeight=42
+
+[PlasmaTransientsConfig][Applets][44]
+immutability=1
+plugin=org.kde.plasma.battery
+
+[PlasmaTransientsConfig][Applets][44][Configuration]
+PreloadWeight=42
+
+[PlasmaTransientsConfig][Applets][45]
+immutability=1
+plugin=org.kde.plasma.networkmanagement
+
+[PlasmaTransientsConfig][Applets][45][Configuration]
+PreloadWeight=42
+
+[PlasmaViews][Panel 1][Defaults]
+maxLength=1920
+minLength=1920
+offset=0
+thickness=32
+
+[PlasmaViews][Panel 1][Horizontal1920]
+alignment=1
+panelVisibility=0
+
+[PlasmaViews][Panel 2][Defaults]
+maxLength=1058
+minLength=1058
+thickness=44
+
+[PlasmaViews][Panel 2][Vertical1080]
+maxLength=1058
+minLength=1058
+
+[PlasmaViews][Panel 23]
+alignment=132
+floating=1
+panelOpacity=2
+panelVisibility=1
+
+[PlasmaViews][Panel 23][Defaults]
+maxLength=1920
+minLength=450
+thickness=64
+
+[PlasmaViews][Panel 23][Horizontal1920]
+maxLength=1920
+minLength=450
+
+[PlasmaViews][Panel 25][Defaults]
+thickness=44
+
+[PlasmaViews][Panel 30]
+alignment=132
+floating=1
+panelOpacity=2
+panelVisibility=1
+
+[PlasmaViews][Panel 30][Defaults]
+maxLength=538
+minLength=538
+thickness=62
+
+[PlasmaViews][Panel 30][Horizontal1920]
+maxLength=538
+minLength=538
+
+[PlasmaViews][Panel 35][Defaults]
+thickness=44
+
+[PlasmaViews][Panel 47][Defaults]
+thickness=44
+
+[PlasmaViews][Panel 56][Defaults]
+thickness=27
+
+[PlasmaViews][Panel 58]
+alignment=132
+floating=1
+panelOpacity=2
+panelVisibility=1
+
+[PlasmaViews][Panel 58][Defaults]
+maxLength=648
+minLength=454
+thickness=60
+
+[PlasmaViews][Panel 58][Horizontal1920]
+maxLength=648
+minLength=454
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_migrate_font_settings.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/no_middle_click_paste_on_panels.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_migrateiconsetting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_remove_shortcut.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/mediaframe_migrate_useBackground_setting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js

@@ -1,0 +1,6 @@
+{
+    "workbench.colorTheme": "Tomorrow Night Blue",
+    "[python]": {
+        "editor.formatOnType": true
+    }
+}

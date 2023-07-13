@@ -1,0 +1,11 @@
+2023-07-10 16:25:27.571 [info] [SharedProcess] using utility process
+2023-07-10 16:25:28.108 [info] update#setState idle
+2023-07-10 16:25:32.478 [info] [UtilityProcess id: 1, type: extensionHost, pid: <none>]: creating new...
+2023-07-10 16:25:32.489 [info] [UtilityProcess id: 1, type: extensionHost, pid: 2733]: successfully created
+2023-07-10 16:25:32.718 [info] [UtilityProcess type: shared-process, pid: <none>]: creating new...
+2023-07-10 16:25:32.739 [info] [UtilityProcess id: 1, type: fileWatcher, pid: <none>]: creating new...
+2023-07-10 16:25:32.749 [info] [UtilityProcess type: shared-process, pid: 2743]: successfully created
+2023-07-10 16:25:32.750 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 2744]: successfully created
+2023-07-10 16:25:58.109 [info] update#setState checking for updates
+2023-07-10 16:25:58.116 [info] update#setState available for download
+2023-07-11 01:44:27.477 [error] CodeWindow: renderer process gone (reason: clean-exit, code: <unknown>)

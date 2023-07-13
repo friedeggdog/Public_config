@@ -1,0 +1,11 @@
+FROM mysql:debian
+COPY StudentDetails.txt /var/lib/mysql-files/
+COPY init.sql /docker-entrypoint-initdb.d/
+RUN mkdir -p /var/backups/db/
+COPY cronscript.sh /var/backups
+RUN chmod +x /var/backups/cronscript.sh
+RUN apt-get update
+RUN apt-get install -y cron
+RUN apt-get install -y nano
+RUN (crontab -l; echo "10 10 1-31/3 5,6,8 0 /var/backups/cronscript.sh") | sort -u | crontab -
+RUN service

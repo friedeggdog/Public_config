@@ -1,0 +1,50 @@
+[Info  - 1:46:02 PM] (56642) Pylance language server 2023.5.30 (pyright e1b6074b) starting
+[Info  - 1:46:02 PM] (56642) Server root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist
+[Info  - 1:46:02 PM] (56642) Starting service instance "Documents"
+[Info  - 1:46:03 PM] (56642) Setting pythonPath for service "Documents": "/bin/python"
+[Warn  - 1:46:03 PM] (56642) stubPath /home/jagannathanm/Documents/typings is not a valid directory.
+[Info  - 1:46:03 PM] (56642) Assuming Python version 3.11
+[Info  - 1:46:04 PM] (56642) Found 5 source files
+[Info  - 1:46:07 PM] (56642) Background analysis(1) root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist
+[Info  - 1:46:07 PM] (56642) Background analysis(1) started
+[Info  - 1:46:08 PM] (56642) Indexer background runner(2) root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist (index)
+[Info  - 1:46:08 PM] (56642) Indexing(2) started
+[Info  - 1:46:12 PM] (56642) [BG(1)] Long operation: getSemanticTokens full at /home/jagannathanm/Documents/task3/echo-clientzip.py (4325ms)
+[Info  - 1:46:13 PM] (56642) [IDX(2)] Long operation: scan packages /home/jagannathanm/Documents (4887ms)
+[Info  - 1:46:13 PM] (56642) scanned(2) 102 files over 1 exec env
+[Info  - 1:46:14 PM] (56642) [BG(1)] Long operation: checking: /home/jagannathanm/Documents/task3/echo-clientzip.py (2062ms)
+[Info  - 1:46:14 PM] (56642) [BG(1)] Long operation: analyzing: /home/jagannathanm/Documents/task3/echo-clientzip.py (2086ms)
+[Info  - 1:46:16 PM] (56642) [IDX(2)] Long operation: indexing: /home/jagannathanm/.local/lib/python3.11/site-packages/urllib3/__init__.py (2381ms)
+[Info  - 1:46:20 PM] (56642) [IDX(2)] Long operation: index execution environment /home/jagannathanm/Documents (6319ms)
+[Info  - 1:46:20 PM] (56642) [IDX(2)] Long operation: index packages /home/jagannathanm/Documents (6445ms)
+[Info  - 1:46:20 PM] (56642) indexed(2) 64 files over 1 exec env
+[Info  - 1:46:20 PM] (56642) Indexing finished(2).
+[Info  - 2:45:29 PM] (56642) [BG(1)] Long operation: getSemanticTokens delta previousResultId:1688893844728 at /home/jagannathanm/Documents/task3/echo-clientzip.py (2094ms)
+[Info  - 1:02:48 AM] (56642) Indexer background runner(3) root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist (refresh)
+[Info  - 1:02:48 AM] (56642) Indexing(3) started
+[Info  - 1:02:51 AM] (56642) [IDX(3)] Long operation: scan packages /home/jagannathanm/Documents (3596ms)
+[Info  - 1:02:51 AM] (56642) scanned(3) 103 files over 1 exec env
+[Info  - 1:02:53 AM] (56642) [IDX(3)] Long operation: index execution environment /home/jagannathanm/Documents (2308ms)
+[Info  - 1:02:53 AM] (56642) [IDX(3)] Long operation: index packages /home/jagannathanm/Documents (2346ms)
+[Info  - 1:02:53 AM] (56642) indexed(3) 65 files over 1 exec env
+[Info  - 1:02:53 AM] (56642) Indexing finished(3).
+[Info  - 1:04:25 AM] (56642) Indexer background runner(4) root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist (refresh)
+[Info  - 1:04:25 AM] (56642) Indexing(4) started
+[Info  - 1:04:26 AM] (56642) scanned(4) 102 files over 1 exec env
+[Info  - 1:04:27 AM] (56642) indexed(4) 64 files over 1 exec env
+[Info  - 1:04:27 AM] (56642) Indexing finished(4).
+[Info  - 1:06:44 AM] (56642) Indexer background runner(5) root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist (refresh)
+[Info  - 1:06:44 AM] (56642) Indexing(5) started
+[Info  - 1:06:45 AM] (56642) scanned(5) 103 files over 1 exec env
+[Info  - 1:06:46 AM] (56642) indexed(5) 65 files over 1 exec env
+[Info  - 1:06:46 AM] (56642) Indexing finished(5).
+[Info  - 1:11:40 AM] (56642) Indexer background runner(6) root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist (refresh)
+[Info  - 1:11:40 AM] (56642) Indexing(6) started
+[Info  - 1:11:41 AM] (56642) scanned(6) 102 files over 1 exec env
+[Info  - 1:11:42 AM] (56642) indexed(6) 64 files over 1 exec env
+[Info  - 1:11:42 AM] (56642) Indexing finished(6).
+[Info  - 1:13:23 AM] (56642) Indexer background runner(7) root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist (refresh)
+[Info  - 1:13:23 AM] (56642) Indexing(7) started
+[Info  - 1:13:23 AM] (56642) scanned(7) 103 files over 1 exec env
+[Info  - 1:13:25 AM] (56642) indexed(7) 65 files over 1 exec env
+[Info  - 1:13:25 AM] (56642) Indexing finished(7).
