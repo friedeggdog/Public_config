@@ -1,0 +1,12 @@
+2023-09-30 12:02:19.217 [error] [uncaught exception in sharedProcess]: Channel name 'extensionRecommendationNotification' timed out after 1000ms
+2023-09-30 12:02:20.900 [warning] No ptyHost heartbeat after 6 seconds
+2023-09-30 12:02:21.853 [info] Getting Manifest... rust-lang.rust-analyzer
+2023-09-30 12:02:21.924 [info] Installing extension: rust-lang.rust-analyzer
+2023-09-30 12:02:38.856 [warning] Extension signature verification failed with error 'UnknownError': rust-lang.rust-analyzer
+2023-09-30 12:02:39.912 [info] Extracted extension to /home/jagannathanm/.vscode/extensions/.00a17325-b2bd-4655-97e6-ed2846239277: rust-lang.rust-analyzer
+2023-09-30 12:02:40.522 [info] Renamed to /home/jagannathanm/.vscode/extensions/rust-lang.rust-analyzer-0.4.1678-linux-x64
+2023-09-30 12:02:40.528 [info] Extracting extension completed. rust-lang.rust-analyzer
+2023-09-30 12:02:40.627 [info] Extension installed successfully: rust-lang.rust-analyzer
+2023-09-30 12:02:40.647 [info] Marked extension as uninstalled rust-lang.rust-analyzer-0.4.1677-linux-x64
+2023-09-30 20:24:06.546 [error] [uncaught exception in sharedProcess]: A system error occurred (read ECONNRESET): Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)

@@ -1,0 +1,2 @@
+2023-09-29 22:36:43.841 [info] Deleted from disk rust-lang.rust-analyzer /home/jagannathanm/.vscode/extensions/rust-lang.rust-analyzer-0.3.1673-linux-x64
+2023-09-29 22:36:57.304 [error] [uncaught exception in sharedProcess]: Channel name 'extensionRecommendationNotification' timed out after 1000ms

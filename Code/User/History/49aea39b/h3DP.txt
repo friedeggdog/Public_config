@@ -1,0 +1,6 @@
+name of website = https://od.nitt.edu/login
+public and private ip = 14.139.162.153 , 203.129.195.153 [https://check-host.net/ip-info?lang=en && https://ipinfo.info/html/ip_checker.php]
+frontend = react [https://gigatesseract.github.io/assets/Praveen_Resume_InOUT.pdf]
+backend = django [https://gigatesseract.github.io/assets/Praveen_Resume_InOUT.pdf]
+database = postgresql 
+proxy = apache [Using whatweb]

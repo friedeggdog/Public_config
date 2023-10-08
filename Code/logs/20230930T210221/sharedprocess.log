@@ -1,0 +1,10 @@
+2023-09-30 21:02:38.032 [info] Deleted from disk rust-lang.rust-analyzer /home/jagannathanm/.vscode/extensions/rust-lang.rust-analyzer-0.4.1677-linux-x64
+2023-09-30 21:15:28.963 [info] Getting Manifest... vscodevim.vim
+2023-09-30 21:15:28.992 [info] Installing extension: vscodevim.vim
+2023-09-30 21:15:45.584 [warning] Extension signature verification failed with error 'UnknownError': vscodevim.vim
+2023-09-30 21:15:45.743 [info] Extracted extension to /home/jagannathanm/.vscode/extensions/.765968e1-6f5b-42c5-bd47-b121ecaa3b57: vscodevim.vim
+2023-09-30 21:15:45.780 [info] Renamed to /home/jagannathanm/.vscode/extensions/vscodevim.vim-1.26.0
+2023-09-30 21:15:45.782 [info] Extracting extension completed. vscodevim.vim
+2023-09-30 21:15:45.842 [info] Extension installed successfully: vscodevim.vim
+2023-09-30 23:00:10.967 [warning] No ptyHost heartbeat after 6 seconds
+2023-09-30 23:00:37.724 [warning] No ptyHost heartbeat after 6 seconds

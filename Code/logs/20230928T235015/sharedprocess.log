@@ -1,0 +1,2 @@
+2023-09-28 23:50:33.008 [error] [uncaught exception in sharedProcess]: Channel name 'extensionRecommendationNotification' timed out after 1000ms
+2023-09-29 11:42:38.546 [warning] No ptyHost heartbeat after 6 seconds

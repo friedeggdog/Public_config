@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>LOGIN</title>
+</head>
+<body>
+    <div id="wrapper">
+    <div id = "form">
+        <h1>Login</h1>
+        <form name="form1" action = "" onsubmit = "return required()" method="post">
+            <p>
+                <label class="cen"> Roll: </label>
+                <input class="cen" type = "text" id = "user" name = "user" />
+            </p>
+            <p>
+                <label class="cen"> Mess: </label>
+                <input class="cen" type = "text" id = "mess" name = "mess" />
+            </p>
+            <p>
+                <input type="button" value="Search" onClick="return EvaluateForm();" />
+            </p>
+        </form>
+    </div>
+    </div>
+    <script>
+            function EvaluateForm()
+            {
+                if(document.form1.user.value.length==0 || document.form1.mess.value.length==0) {
+                    alert("Fields Empty");
+                    return false;
+                }
+
+                if( document.getElementById('mess').value == 'mess1' ){
+                    document.form1.action = "http://first.mess.local/";
+                }
+                if( document.getElementById('mess').value == 'mess2' ){
+                    document.form1.action = "http://second.mess.local/";
+                }
+                if( document.getElementById('mess').value == 'mess3' ){
+                    document.form1.action = "http://third.mess.local/";
+                }
+                document.forms["form1"].submit();
+                return false;
+            }
+    </script>
+</body>
+</html>

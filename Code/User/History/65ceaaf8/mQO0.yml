@@ -1,0 +1,11 @@
+version: '3.9' 
+  
+services: 
+   server: 
+     container_name: cont_name
+     image: imagename
+     build: 
+       context: . 
+    ports:
+      - "3000:3000"
+     restart: always

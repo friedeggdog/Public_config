@@ -1,0 +1,29 @@
+2023-09-29 18:20:45.072 [info] [SharedProcess] using utility process
+2023-09-29 18:20:45.549 [info] update#setState idle
+2023-09-29 18:20:51.201 [info] [UtilityProcess type: shared-process, pid: <none>]: creating new...
+2023-09-29 18:20:51.219 [info] [UtilityProcess id: 1, type: fileWatcher, pid: <none>]: creating new...
+2023-09-29 18:20:51.240 [info] [UtilityProcess type: shared-process, pid: 105331]: successfully created
+2023-09-29 18:20:51.244 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 105332]: successfully created
+2023-09-29 18:20:51.610 [info] [UtilityProcess id: 1, type: extensionHost, pid: <none>]: creating new...
+2023-09-29 18:20:51.633 [info] [UtilityProcess id: 1, type: extensionHost, pid: 105369]: successfully created
+2023-09-29 18:21:15.550 [info] update#setState checking for updates
+2023-09-29 18:21:15.558 [info] update#setState available for download
+2023-09-29 18:40:27.788 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 105332]: attempting to kill the process...
+2023-09-29 18:40:27.789 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 105332]: successfully killed the process
+2023-09-29 18:40:27.790 [info] [UtilityProcess id: 1, type: extensionHost, pid: 105369]: received exit event with code 0
+2023-09-29 18:40:27.790 [info] Extension host with pid 105369 exited with code: 0, signal: unknown.
+2023-09-29 18:40:27.805 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 105332]: received exit event with code 15
+2023-09-29 18:40:27.806 [error] [UtilityProcessWorker]: terminated unexpectedly with code 15, signal: unknown
+2023-09-29 18:40:27.807 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 105332]: crashed with code 15 and reason 'killed'
+2023-09-29 18:40:29.155 [info] [UtilityProcess id: 1, type: fileWatcher, pid: <none>]: creating new...
+2023-09-29 18:40:29.165 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 112703]: successfully created
+2023-09-29 18:40:29.283 [info] [UtilityProcess id: 2, type: extensionHost, pid: <none>]: creating new...
+2023-09-29 18:40:29.295 [info] [UtilityProcess id: 2, type: extensionHost, pid: 112713]: successfully created
+2023-09-29 22:27:43.949 [info] [UtilityProcess id: 2, type: extensionHost, pid: 112713]: waiting to exit...
+2023-09-29 22:27:44.101 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 112703]: attempting to kill the process...
+2023-09-29 22:27:44.102 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 112703]: successfully killed the process
+2023-09-29 22:27:44.792 [info] [UtilityProcess id: 2, type: extensionHost, pid: 112713]: received exit event with code 0
+2023-09-29 22:27:44.793 [info] Extension host with pid 112713 exited with code: 0, signal: unknown.
+2023-09-29 22:27:44.794 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 112703]: received exit event with code 0
+2023-09-29 22:27:46.867 [warning] [storage main] detected slow close() operation: Time: 2917ms, DB size: 196608b, Large Keys: iconThemeData:90038, history.recentlyOpenedPathsList:10100, colorThemeData:9922, ms-python.python:5897, memento/experiment.service.memento:3913
+2023-09-29 22:27:48.983 [warning] [storage main] detected slow close() operation: Time: 5034ms, DB size: 69632b, Large Keys: memento/workbench.editors.files.textFileEditor:24383, history.entries:8099, memento/workbench.parts.editor:2246, workbench.view.extensions.state:1951, codelens/cache2:1619

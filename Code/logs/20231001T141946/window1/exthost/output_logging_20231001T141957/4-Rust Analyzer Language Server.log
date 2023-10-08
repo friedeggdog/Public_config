@@ -1,0 +1,440 @@
+Panic context:
+> 
+version: 0.4.1678-standalone
+request: textDocument/codeAction CodeActionParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 9,
+            character: 4,
+        },
+        end: Position {
+            line: 9,
+            character: 11,
+        },
+    },
+    context: CodeActionContext {
+        diagnostics: [
+            Diagnostic {
+                range: Range {
+                    start: Position {
+                        line: 9,
+                        character: 4,
+                    },
+                    end: Position {
+                        line: 9,
+                        character: 11,
+                    },
+                },
+                severity: Some(
+                    Error,
+                ),
+                code: Some(
+                    String(
+                        "Click for full compiler diagnostic",
+                    ),
+                ),
+                code_description: Some(
+                    CodeDescription {
+                        href: Url {
+                            scheme: "rust-analyzer-diagnostics-view",
+                            cannot_be_a_base: false,
+                            username: "",
+                            password: None,
+                            host: None,
+                            port: None,
+                            path: "/diagnostic%20message%20%5B0%5D",
+                            query: Some(
+                                "0",
+                            ),
+                            fragment: Some(
+                                "file%3A%2F%2F%2Fhome%2Fjagannathanm%2Fprograms%2FRust%2Fminigrep%2Fsrc%2Fmain.rs",
+                            ),
+                        },
+                    },
+                ),
+                source: Some(
+                    "rustc",
+                ),
+                message: "expected function, found macro `println`\nnot a function",
+                related_information: Some(
+                    [
+                        DiagnosticRelatedInformation {
+                            location: Location {
+                                uri: Url {
+                                    scheme: "file",
+                                    cannot_be_a_base: false,
+                                    username: "",
+                                    password: None,
+                                    host: None,
+                                    port: None,
+                                    path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+                                    query: None,
+                                    fragment: None,
+                                },
+                                range: Range {
+                                    start: Position {
+                                        line: 9,
+                                        character: 11,
+                                    },
+                                    end: Position {
+                                        line: 9,
+                                        character: 11,
+                                    },
+                                },
+                            },
+                            message: "use `!` to invoke the macro: `!`",
+                        },
+                    ],
+                ),
+                tags: None,
+                data: Some(
+                    Object {
+                        "rendered": String("\u{1b}[0m\u{1b}[1m\u{1b}[38;5;9merror[E0423]\u{1b}[0m\u{1b}[0m\u{1b}[1m: expected function, found macro `println`\u{1b}[0m\n\u{1b}[0m  \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m--> \u{1b}[0m\u{1b}[0msrc/main.rs:10:5\u{1b}[0m\n\u{1b}[0m   \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m|\u{1b}[0m\n\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m10\u{1b}[0m\u{1b}[0m \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m|\u{1b}[0m\u{1b}[0m \u{1b}[0m\u{1b}[0m    println(\"{}\",file_contents); \u{1b}[0m\n\u{1b}[0m   \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m| \u{1b}[0m\u{1b}[0m    \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;9m^^^^^^^\u{1b}[0m\u{1b}[0m \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;9mnot a function\u{1b}[0m\n\u{1b}[0m   \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m|\u{1b}[0m\n\u{1b}[0m\u{1b}[1m\u{1b}[38;5;14mhelp\u{1b}[0m\u{1b}[0m: use `!` to invoke the macro\u{1b}[0m\n\u{1b}[0m   \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m|\u{1b}[0m\n\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m10\u{1b}[0m\u{1b}[0m \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m| \u{1b}[0m\u{1b}[0m    println\u{1b}[0m\u{1b}[0m\u{1b}[38;5;10m!\u{1b}[0m\u{1b}[0m(\"{}\",file_contents); \u{1b}[0m\n\u{1b}[0m   \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m|\u{1b}[0m\u{1b}[0m            \u{1b}[0m\u{1b}[0m\u{1b}[38;5;10m+\u{1b}[0m\n\n"),
+                    },
+                ),
+            },
+            Diagnostic {
+                range: Range {
+                    start: Position {
+                        line: 9,
+                        character: 11,
+                    },
+                    end: Position {
+                        line: 9,
+                        character: 11,
+                    },
+                },
+                severity: Some(
+                    Hint,
+                ),
+                code: Some(
+                    String(
+                        "E0423",
+                    ),
+                ),
+                code_description: Some(
+                    CodeDescription {
+                        href: Url {
+                            scheme: "https",
+                            cannot_be_a_base: false,
+                            username: "",
+                            password: None,
+                            host: Some(
+                                Domain(
+                                    "doc.rust-lang.org",
+                                ),
+                            ),
+                            port: None,
+                            path: "/error-index.html",
+                            query: None,
+                            fragment: Some(
+                                "E0423",
+                            ),
+                        },
+                    },
+                ),
+                source: Some(
+                    "rustc",
+                ),
+                message: "use `!` to invoke the macro: `!`",
+                related_information: Some(
+                    [
+                        DiagnosticRelatedInformation {
+                            location: Location {
+                                uri: Url {
+                                    scheme: "file",
+                                    cannot_be_a_base: false,
+                                    username: "",
+                                    password: None,
+                                    host: None,
+                                    port: None,
+                                    path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+                                    query: None,
+                                    fragment: None,
+                                },
+                                range: Range {
+                                    start: Position {
+                                        line: 9,
+                                        character: 4,
+                                    },
+                                    end: Position {
+                                        line: 9,
+                                        character: 11,
+                                    },
+                                },
+                            },
+                            message: "original diagnostic",
+                        },
+                    ],
+                ),
+                tags: None,
+                data: None,
+            },
+        ],
+        only: Some(
+            [
+                CodeActionKind(
+                    "quickfix",
+                ),
+            ],
+        ),
+        trigger_kind: Some(
+            Invoked,
+        ),
+    },
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'Bad offset: range 0..288 offset 292', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rowan-0.15.11/src/cursor.rs:751:9
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: rowan::cursor::SyntaxNode::token_at_offset
+   3: ide_assists::assist_context::AssistContext::new
+   4: ide_assists::assists
+   5: std::panicking::try
+   6: ide::Analysis::assists_with_fixes
+   7: rust_analyzer::handlers::request::handle_code_action
+   8: std::panicking::try
+   9: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+Panic context:
+> 
+version: 0.4.1678-standalone
+request: textDocument/codeAction CodeActionParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 9,
+            character: 4,
+        },
+        end: Position {
+            line: 9,
+            character: 11,
+        },
+    },
+    context: CodeActionContext {
+        diagnostics: [
+            Diagnostic {
+                range: Range {
+                    start: Position {
+                        line: 9,
+                        character: 4,
+                    },
+                    end: Position {
+                        line: 9,
+                        character: 11,
+                    },
+                },
+                severity: Some(
+                    Error,
+                ),
+                code: Some(
+                    String(
+                        "Click for full compiler diagnostic",
+                    ),
+                ),
+                code_description: Some(
+                    CodeDescription {
+                        href: Url {
+                            scheme: "rust-analyzer-diagnostics-view",
+                            cannot_be_a_base: false,
+                            username: "",
+                            password: None,
+                            host: None,
+                            port: None,
+                            path: "/diagnostic%20message%20%5B0%5D",
+                            query: Some(
+                                "0",
+                            ),
+                            fragment: Some(
+                                "file%3A%2F%2F%2Fhome%2Fjagannathanm%2Fprograms%2FRust%2Fminigrep%2Fsrc%2Fmain.rs",
+                            ),
+                        },
+                    },
+                ),
+                source: Some(
+                    "rustc",
+                ),
+                message: "expected function, found macro `println`\nnot a function",
+                related_information: Some(
+                    [
+                        DiagnosticRelatedInformation {
+                            location: Location {
+                                uri: Url {
+                                    scheme: "file",
+                                    cannot_be_a_base: false,
+                                    username: "",
+                                    password: None,
+                                    host: None,
+                                    port: None,
+                                    path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+                                    query: None,
+                                    fragment: None,
+                                },
+                                range: Range {
+                                    start: Position {
+                                        line: 9,
+                                        character: 11,
+                                    },
+                                    end: Position {
+                                        line: 9,
+                                        character: 11,
+                                    },
+                                },
+                            },
+                            message: "use `!` to invoke the macro: `!`",
+                        },
+                    ],
+                ),
+                tags: None,
+                data: Some(
+                    Object {
+                        "rendered": String("\u{1b}[0m\u{1b}[1m\u{1b}[38;5;9merror[E0423]\u{1b}[0m\u{1b}[0m\u{1b}[1m: expected function, found macro `println`\u{1b}[0m\n\u{1b}[0m  \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m--> \u{1b}[0m\u{1b}[0msrc/main.rs:10:5\u{1b}[0m\n\u{1b}[0m   \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m|\u{1b}[0m\n\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m10\u{1b}[0m\u{1b}[0m \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m|\u{1b}[0m\u{1b}[0m \u{1b}[0m\u{1b}[0m    println(\"{}\",file_contents); \u{1b}[0m\n\u{1b}[0m   \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m| \u{1b}[0m\u{1b}[0m    \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;9m^^^^^^^\u{1b}[0m\u{1b}[0m \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;9mnot a function\u{1b}[0m\n\u{1b}[0m   \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m|\u{1b}[0m\n\u{1b}[0m\u{1b}[1m\u{1b}[38;5;14mhelp\u{1b}[0m\u{1b}[0m: use `!` to invoke the macro\u{1b}[0m\n\u{1b}[0m   \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m|\u{1b}[0m\n\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m10\u{1b}[0m\u{1b}[0m \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m| \u{1b}[0m\u{1b}[0m    println\u{1b}[0m\u{1b}[0m\u{1b}[38;5;10m!\u{1b}[0m\u{1b}[0m(\"{}\",file_contents); \u{1b}[0m\n\u{1b}[0m   \u{1b}[0m\u{1b}[0m\u{1b}[1m\u{1b}[38;5;12m|\u{1b}[0m\u{1b}[0m            \u{1b}[0m\u{1b}[0m\u{1b}[38;5;10m+\u{1b}[0m\n\n"),
+                    },
+                ),
+            },
+            Diagnostic {
+                range: Range {
+                    start: Position {
+                        line: 9,
+                        character: 11,
+                    },
+                    end: Position {
+                        line: 9,
+                        character: 11,
+                    },
+                },
+                severity: Some(
+                    Hint,
+                ),
+                code: Some(
+                    String(
+                        "E0423",
+                    ),
+                ),
+                code_description: Some(
+                    CodeDescription {
+                        href: Url {
+                            scheme: "https",
+                            cannot_be_a_base: false,
+                            username: "",
+                            password: None,
+                            host: Some(
+                                Domain(
+                                    "doc.rust-lang.org",
+                                ),
+                            ),
+                            port: None,
+                            path: "/error-index.html",
+                            query: None,
+                            fragment: Some(
+                                "E0423",
+                            ),
+                        },
+                    },
+                ),
+                source: Some(
+                    "rustc",
+                ),
+                message: "use `!` to invoke the macro: `!`",
+                related_information: Some(
+                    [
+                        DiagnosticRelatedInformation {
+                            location: Location {
+                                uri: Url {
+                                    scheme: "file",
+                                    cannot_be_a_base: false,
+                                    username: "",
+                                    password: None,
+                                    host: None,
+                                    port: None,
+                                    path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+                                    query: None,
+                                    fragment: None,
+                                },
+                                range: Range {
+                                    start: Position {
+                                        line: 9,
+                                        character: 4,
+                                    },
+                                    end: Position {
+                                        line: 9,
+                                        character: 11,
+                                    },
+                                },
+                            },
+                            message: "original diagnostic",
+                        },
+                    ],
+                ),
+                tags: None,
+                data: None,
+            },
+        ],
+        only: Some(
+            [
+                CodeActionKind(
+                    "quickfix",
+                ),
+            ],
+        ),
+        trigger_kind: Some(
+            Invoked,
+        ),
+    },
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'Bad offset: range 0..288 offset 292', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rowan-0.15.11/src/cursor.rs:751:9
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: rowan::cursor::SyntaxNode::token_at_offset
+   3: ide_assists::assist_context::AssistContext::new
+   4: ide_assists::assists
+   5: std::panicking::try
+   6: ide::Analysis::assists_with_fixes
+   7: rust_analyzer::handlers::request::handle_code_action
+   8: std::panicking::try
+   9: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.

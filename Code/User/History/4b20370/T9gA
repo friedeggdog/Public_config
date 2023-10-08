@@ -1,0 +1,4 @@
+POSTGRES_USER="myusername"
+POSTGRES_PASSWORD="mypassword"
+POSTGRES_DB="rust_server"
+POSTGRES_URL="postgres://${POSTGRES_USR}:${POSTGRES_PWD}@postgres:5432/rust_server

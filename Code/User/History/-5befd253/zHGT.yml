@@ -1,0 +1,41 @@
+# version: '3'
+# services:
+#   1mess1:
+#     build: ./mess1
+#     ports:
+#     - "5001:5000"
+#   2mess1:
+#     build: ./mess1
+#     ports:
+#     - "5002:5000"
+#   3mess1:
+#     build: ./mess1
+#     ports:
+#     - "5003:5000"
+#   nginx:
+#     build: ./nginx
+#     ports:
+#     - "8080:80"
+#     depends_on:
+#       - 1mess1
+#       - 2mess1
+#       - 3mess1
+
+version: '3'
+services:
+  mess1:
+    build: ./mess1
+  mess2:
+    build: ./mess2
+  mess3:
+    build: ./mess3
+  nginx:
+    build: ./nginx
+    ports:
+    - "8080:80"
+    depends_on:
+      - mess1
+      - mess2
+      - mess3
+
+#docker-compose up --build --scale mess1=3 --scale mess2=3 --scale mess3=3

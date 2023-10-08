@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "__MSG_extensionName__",
+    "version": "2.4.5",
+    
+    "host_permissions":[
+      "*://*/*"
+    ],
+  
+    "permissions": [
+      "tabs",
+      "scripting"
+    ],
+  
+    "action": {
+      "default_title": "__MSG_extensionName__",
+      "default_popup": "popup/popup.html"
+    },
+  
+    "content_security_policy": {}
+  }

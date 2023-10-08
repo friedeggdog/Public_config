@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  server:
+    container_name: festember_tshirt_frontend
+    image: festember_tshirt_frontend_image
+    build:
+      context: .
+      target: prod
+    ports:
+        - '7000:7000'
+    restart: always
+

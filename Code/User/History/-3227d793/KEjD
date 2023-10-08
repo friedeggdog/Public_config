@@ -1,0 +1,12 @@
+FROM postgres
+RUN mkdir /Backend
+COPY * /Backend/
+RUN apt-get -y update
+RUN apt-get install -y nano
+RUN apt-get install -y curl
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+RUN source $HOME/.cargo/bin
+RUN cd /Backend
+RUN apt-get install -y libpq-dev
+RUN cargo install diesel_cli --no-default-features --features postgres --locked
+CMD ["/bin/bash"]

@@ -1,0 +1,9 @@
+2023-09-29 18:20:57.399 [error] [uncaught exception in sharedProcess]: Channel name 'extensionRecommendationNotification' timed out after 1000ms
+2023-09-29 18:40:04.983 [info] Getting Manifest... rust-lang.rust-analyzer
+2023-09-29 18:40:05.052 [info] Installing extension: rust-lang.rust-analyzer
+2023-09-29 18:40:22.689 [warning] Extension signature verification failed with error 'UnknownError': rust-lang.rust-analyzer
+2023-09-29 18:40:23.449 [info] Extracted extension to /home/jagannathanm/.vscode/extensions/.8b6bc760-6652-4417-907d-59098c344c2f: rust-lang.rust-analyzer
+2023-09-29 18:40:23.965 [info] Renamed to /home/jagannathanm/.vscode/extensions/rust-lang.rust-analyzer-0.4.1677-linux-x64
+2023-09-29 18:40:23.968 [info] Extracting extension completed. rust-lang.rust-analyzer
+2023-09-29 18:40:24.016 [info] Extension installed successfully: rust-lang.rust-analyzer
+2023-09-29 18:40:24.026 [info] Marked extension as uninstalled rust-lang.rust-analyzer-0.3.1673-linux-x64

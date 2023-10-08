@@ -1,0 +1,38 @@
+version: '3.3'
+services:
+    db:
+        container_name: postgresql
+        environment:
+            - POSTGRES_USER=myusername
+            - POSTGRES_PASSWORD=mypassword
+        ports:
+            - '5432:5432'
+        image: postgres
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U myusername"]
+            interval: 5s
+            timeout: 5s
+            retries: 5
+        networks:
+            app:
+              ipv4_address: 172.25.0.2
+
+    backend:
+        container_name: Backend
+        build: ./Backend
+        networks:
+            app:
+              ipv4_address: 172.25.0.3
+        command: 'bash -c "(cd /Backend ; diesel setup && cargo run)"'
+        depends_on:
+            db:
+              condition: service_healthy
+          
+
+networks:
+  app:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16
+          gateway: 172.25.0.1

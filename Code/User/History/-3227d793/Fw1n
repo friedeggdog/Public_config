@@ -1,0 +1,18 @@
+FROM postgres
+RUN mkdir /Backend
+COPY ./ /Backend/
+#COPY init.sql /docker-entrypoint-initdb.d/
+RUN apt-get -y update
+RUN apt-get install -y nano
+RUN apt-get install -y curl
+RUN apt-get install -y build-essential
+RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
+ENV PATH="/root/.cargo/bin:${PATH}"
+RUN cd /Backend
+RUN apt-get install -y libpq-dev
+RUN cargo install diesel_cli --no-default-features --features postgres --locked
+RUN echo en_US.UTF-8 UTF-8 > /etc/locale.gen
+RUN locale-gen en_US.UTF-8
+
+
+#docker run --name postgresql -e POSTGRES_USER=myusername -e POSTGRES_PASSWORD=mypassword -p 5432:5432

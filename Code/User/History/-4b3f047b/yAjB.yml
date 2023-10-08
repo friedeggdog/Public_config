@@ -1,0 +1,21 @@
+version: '3.3'
+services:
+    db:
+        container_name: postgresql
+        environment:
+            - POSTGRES_USER=myusername
+            - POSTGRES_PASSWORD=mypassword
+        ports:
+            - '5432:5432'
+        image: postgres
+        networks:
+            app_nework:
+              ipv4_address: 172.25.0.2
+
+networks:
+  app_nework:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16
+          gateway: 172.25.0.1

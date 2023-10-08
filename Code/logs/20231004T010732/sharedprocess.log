@@ -1,0 +1,12 @@
+2023-10-04 01:07:52.516 [warning] No ptyHost heartbeat after 6 seconds
+2023-10-04 01:07:57.624 [info] Deleted from disk rust-lang.rust-analyzer /home/jagannathanm/.vscode/extensions/rust-lang.rust-analyzer-0.4.1679-linux-x64
+2023-10-04 01:08:06.809 [info] Getting Manifest... rust-lang.rust-analyzer
+2023-10-04 01:08:23.046 [info] Installing extension: rust-lang.rust-analyzer
+2023-10-04 01:09:00.687 [warning] Extension signature verification failed with error 'UnknownError': rust-lang.rust-analyzer
+2023-10-04 01:09:01.565 [info] Getting Manifest... rust-lang.rust-analyzer
+2023-10-04 01:09:01.766 [info] Extensions is already requested to install rust-lang.rust-analyzer
+2023-10-04 01:09:11.850 [info] Extracted extension to /home/jagannathanm/.vscode/extensions/.6e0a814e-f98a-47df-a42b-eeb84a017ae7: rust-lang.rust-analyzer
+2023-10-04 01:09:12.556 [info] Renamed to /home/jagannathanm/.vscode/extensions/rust-lang.rust-analyzer-0.4.1682-linux-x64
+2023-10-04 01:09:12.559 [info] Extracting extension completed. rust-lang.rust-analyzer
+2023-10-04 01:09:12.738 [info] Extension installed successfully: rust-lang.rust-analyzer
+2023-10-04 01:09:12.744 [info] Marked extension as uninstalled rust-lang.rust-analyzer-0.4.1680-linux-x64

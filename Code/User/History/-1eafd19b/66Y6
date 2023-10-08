@@ -1,0 +1,9 @@
+FROM node:20-alpine as build
+WORKDIR /app
+RUN yarn install
+COPY package*.json ./
+COPY yarn.lock yarn.lock
+RUN yarn install -g pm2
+COPY . .
+RUN yarn run build
+CMD ["pm2", "serve","--no-daemon", "build", "3000", "--spa"]

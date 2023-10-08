@@ -1,0 +1,8 @@
+{
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "window.menuBarVisibility": "visible",
+    "window.titleBarStyle": "custom",
+    "window.zoomLevel": 2
+}

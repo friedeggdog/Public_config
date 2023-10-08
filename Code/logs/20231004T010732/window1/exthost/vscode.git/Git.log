@@ -1,0 +1,70 @@
+2023-10-04 01:07:53.854 [info] Log level: Info
+2023-10-04 01:07:53.854 [info] Validating found git in: "git"
+2023-10-04 01:07:58.378 [info] Using git "2.42.0" from "git"
+2023-10-04 01:08:00.934 [info] > git rev-parse --show-toplevel [2424ms]
+2023-10-04 01:08:00.995 [info] > git rev-parse --git-dir --git-common-dir [11ms]
+2023-10-04 01:08:01.008 [info] Open repository: /home/jagannathanm/programs/Rust/minigrep
+2023-10-04 01:08:01.036 [info] > git rev-parse --show-toplevel [15ms]
+2023-10-04 01:08:01.064 [info] No remotes found in the git config file.
+2023-10-04 01:08:01.067 [info] > git rev-parse --show-toplevel [19ms]
+2023-10-04 01:08:01.082 [info] > git rev-parse --show-toplevel [4ms]
+2023-10-04 01:08:01.133 [info] > git config --get commit.template [99ms]
+2023-10-04 01:08:01.175 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [112ms]
+2023-10-04 01:08:02.089 [info] > git status -z -uall [899ms]
+2023-10-04 01:08:02.118 [info] No remotes found in the git config file.
+2023-10-04 01:08:02.119 [info] > git config --get commit.template [13ms]
+2023-10-04 01:08:02.120 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2023-10-04 01:08:02.132 [info] > git status -z -uall [2ms]
+2023-10-04 01:08:05.399 [info] > git check-ignore -v -z --stdin [459ms]
+2023-10-04 01:08:16.124 [info] No remotes found in the git config file.
+2023-10-04 01:08:16.126 [info] > git config --get commit.template [83ms]
+2023-10-04 01:08:16.129 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [17ms]
+2023-10-04 01:08:16.181 [info] > git status -z -uall [42ms]
+2023-10-04 01:09:02.598 [info] Log level: Info
+2023-10-04 01:09:02.599 [info] Validating found git in: "git"
+2023-10-04 01:09:02.599 [info] Using git "2.42.0" from "git"
+2023-10-04 01:09:02.958 [info] > git rev-parse --show-toplevel [360ms]
+2023-10-04 01:09:05.515 [info] > git rev-parse --git-dir --git-common-dir [1043ms]
+2023-10-04 01:09:05.540 [info] Open repository: /home/jagannathanm/programs/Rust/rustlings
+2023-10-04 01:09:05.673 [info] > git rev-parse --show-toplevel [18ms]
+2023-10-04 01:09:05.691 [info] > git rev-parse --show-toplevel [7ms]
+2023-10-04 01:09:05.705 [info] > git config --get commit.template [32ms]
+2023-10-04 01:09:05.706 [info] > git rev-parse --show-toplevel [3ms]
+2023-10-04 01:09:05.734 [info] > git rev-parse --show-toplevel [14ms]
+2023-10-04 01:09:05.748 [info] > git rev-parse --show-toplevel [3ms]
+2023-10-04 01:09:05.827 [info] > git rev-parse --show-toplevel [69ms]
+2023-10-04 01:09:05.841 [info] > git rev-parse --show-toplevel [3ms]
+2023-10-04 01:09:06.807 [info] > git check-ignore -v -z --stdin [602ms]
+2023-10-04 01:09:07.068 [info] > git for-each-ref --format %(refname) %(objectname) %(*objectname) refs/tags [1335ms]
+2023-10-04 01:09:46.959 [info] Log level: Info
+2023-10-04 01:09:47.031 [info] Validating found git in: "git"
+2023-10-04 01:09:47.078 [info] Using git "2.42.0" from "git"
+2023-10-04 01:09:48.326 [info] > git rev-parse --show-toplevel [1231ms]
+2023-10-04 01:09:48.382 [info] > git rev-parse --show-toplevel [22ms]
+2023-10-04 01:09:48.399 [info] > git rev-parse --show-toplevel [5ms]
+2023-10-04 01:09:48.413 [info] > git rev-parse --show-toplevel [1ms]
+2023-10-04 01:09:48.425 [info] > git rev-parse --show-toplevel [2ms]
+2023-10-04 01:09:48.438 [info] > git rev-parse --show-toplevel [1ms]
+2023-10-04 01:09:48.450 [info] > git rev-parse --show-toplevel [1ms]
+2023-10-04 01:09:48.463 [info] > git rev-parse --show-toplevel [2ms]
+2023-10-04 01:09:48.475 [info] > git rev-parse --show-toplevel [2ms]
+2023-10-04 01:09:48.488 [info] > git rev-parse --show-toplevel [2ms]
+2023-10-04 01:09:48.500 [info] > git rev-parse --show-toplevel [2ms]
+2023-10-04 01:09:48.513 [info] > git rev-parse --show-toplevel [2ms]
+2023-10-04 01:09:48.525 [info] > git rev-parse --show-toplevel [2ms]
+2023-10-04 01:09:48.538 [info] > git rev-parse --show-toplevel [1ms]
+2023-10-04 01:09:48.550 [info] > git rev-parse --show-toplevel [2ms]
+2023-10-04 01:09:48.562 [info] > git rev-parse --show-toplevel [1ms]
+2023-10-04 01:09:48.573 [info] > git rev-parse --show-toplevel [1ms]
+2023-10-04 01:09:48.586 [info] > git rev-parse --show-toplevel [2ms]
+2023-10-04 01:09:48.599 [info] > git rev-parse --show-toplevel [1ms]
+2023-10-04 01:09:48.612 [info] > git rev-parse --show-toplevel [1ms]
+2023-10-04 01:09:48.625 [info] > git rev-parse --show-toplevel [2ms]
+2023-10-04 01:09:48.638 [info] > git rev-parse --show-toplevel [2ms]
+2023-10-04 01:09:48.649 [info] > git rev-parse --show-toplevel [1ms]
+2023-10-04 01:09:48.661 [info] > git rev-parse --show-toplevel [1ms]
+2023-10-04 01:09:48.672 [info] > git rev-parse --show-toplevel [1ms]
+2023-10-04 01:09:48.684 [info] > git rev-parse --show-toplevel [1ms]
+2023-10-04 01:10:24.937 [info] > git rev-parse --show-toplevel [1612ms]
+2023-10-04 01:10:42.413 [info] > git rev-parse --show-toplevel [3ms]
+2023-10-04 01:11:21.077 [info] > git rev-parse --show-toplevel [409ms]

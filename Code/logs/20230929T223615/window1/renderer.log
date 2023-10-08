@@ -1,0 +1,7 @@
+2023-09-29 22:36:24.743 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.vscode-selfhost-test-provider' wants API proposal 'testContinuousRun' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2023-09-29 22:36:24.758 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.remote-repositories' wants API proposal 'contribEditorGutterMenu' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2023-09-29 22:36:24.758 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.vscode-pull-request-github' wants API proposal 'contribEditorGutterMenu' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2023-09-29 22:36:24.759 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-toolsai.jupyter' wants API proposal 'notebookControllerKind' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2023-09-29 22:37:06.238 [info] [perf] Render performance baseline is 228ms
+2023-09-29 22:37:13.433 [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+2023-09-29 22:37:18.171 [info] UNRESPONSIVE extension host: starting to profile NOW

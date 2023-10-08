@@ -1,0 +1,4 @@
+name of website = https://od.nitt.edu/login
+public ip
+private ip
+frontend = react

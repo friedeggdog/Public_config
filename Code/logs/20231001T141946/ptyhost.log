@@ -1,0 +1,3 @@
+2023-10-01 18:47:23.068 [info] Persistent process reconnection "1"
+2023-10-01 18:47:23.520 [info] Persistent process "1": Replaying 5249 chars and 1 size events
+2023-10-01 18:47:47.365 [warning] Shell integration cannot be enabled for executable "/usr/bin/tmux" and args undefined

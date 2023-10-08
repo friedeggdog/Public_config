@@ -1,0 +1,16 @@
+[ERROR rust_analyzer::main_loop] FetchBuildDataError:
+error[E0635]: unknown feature `proc_macro_span_shrink`
+  --> /home/jagannathanm/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro2-1.0.53/src/lib.rs:92:30
+   |
+92 |     feature(proc_macro_span, proc_macro_span_shrink)
+   |                              ^^^^^^^^^^^^^^^^^^^^^^
+
+
+error: aborting due to previous error
+
+
+For more information about this error, try `rustc --explain E0635`.
+
+error: could not compile `proc-macro2` (lib) due to 2 previous errors
+
+

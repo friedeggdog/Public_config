@@ -1,0 +1,9 @@
+[Info  - 9:00:32 PM] (785351) Pylance language server 2023.5.30 (pyright e1b6074b) starting
+[Info  - 9:00:32 PM] (785351) Server root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist
+[Info  - 9:00:32 PM] (785351) Starting service instance "fart"
+[Info  - 9:00:32 PM] (785351) Setting pythonPath for service "fart": "/bin/python"
+[Warn  - 9:00:32 PM] (785351) stubPath /home/jagannathanm/programs/Rust/fart/typings is not a valid directory.
+[Info  - 9:00:33 PM] (785351) Assuming Python version 3.11
+[Info  - 9:00:34 PM] (785351) No source files found.
+[Info  - 9:00:34 PM] (785351) Background analysis(1) root directory: /home/jagannathanm/.vscode/extensions/ms-python.vscode-pylance-2023.5.30/dist
+[Info  - 9:00:34 PM] (785351) Background analysis(1) started

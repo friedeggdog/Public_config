@@ -1,0 +1,189 @@
+Panic context:
+> 
+version: 0.4.1677-standalone
+request: textDocument/codeAction CodeActionParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/rustlings/exercises/traits/traits3.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 14,
+            character: 8,
+        },
+        end: Position {
+            line: 14,
+            character: 8,
+        },
+    },
+    context: CodeActionContext {
+        diagnostics: [],
+        only: None,
+        trigger_kind: Some(
+            Automatic,
+        ),
+    },
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'no entry found for key', crates/ide-assists/src/handlers/generate_function.rs:871:62
+stack backtrace:
+Panic context:
+> 
+version: 0.4.1677-standalone
+request: textDocument/codeAction CodeActionParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/rustlings/exercises/traits/traits3.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 14,
+            character: 13,
+        },
+        end: Position {
+            line: 14,
+            character: 13,
+        },
+    },
+    context: CodeActionContext {
+        diagnostics: [],
+        only: None,
+        trigger_kind: Some(
+            Automatic,
+        ),
+    },
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'no entry found for key', crates/ide-assists/src/handlers/generate_function.rs:871:62
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic_display
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:150:5
+   3: core::panicking::panic_str
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:134:5
+   4: core::option::expect_failed
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/option.rs:1952:5
+   5: ide_assists::handlers::generate_function::fn_generic_params
+   6: ide_assists::handlers::generate_function::generate_function
+   7: ide_assists::assists
+   8: std::panicking::try
+   9: ide::Analysis::assists_with_fixes
+  10: rust_analyzer::handlers::request::handle_code_action
+  11: std::panicking::try
+  12: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic_display
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:150:5
+   3: core::panicking::panic_str
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:134:5
+   4: core::option::expect_failed
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/option.rs:1952:5
+   5: ide_assists::handlers::generate_function::fn_generic_params
+   6: ide_assists::handlers::generate_function::generate_function
+   7: ide_assists::assists
+   8: std::panicking::try
+   9: ide::Analysis::assists_with_fixes
+  10: rust_analyzer::handlers::request::handle_code_action
+  11: std::panicking::try
+  12: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+Panic context:
+> 
+version: 0.4.1677-standalone
+request: textDocument/codeAction CodeActionParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/rustlings/exercises/traits/traits3.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 14,
+            character: 15,
+        },
+        end: Position {
+            line: 14,
+            character: 15,
+        },
+    },
+    context: CodeActionContext {
+        diagnostics: [],
+        only: None,
+        trigger_kind: Some(
+            Automatic,
+        ),
+    },
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'no entry found for key', crates/ide-assists/src/handlers/generate_function.rs:871:62
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic_display
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:150:5
+   3: core::panicking::panic_str
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:134:5
+   4: core::option::expect_failed
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/option.rs:1952:5
+   5: ide_assists::handlers::generate_function::fn_generic_params
+   6: ide_assists::handlers::generate_function::generate_function
+   7: ide_assists::assists
+   8: std::panicking::try
+   9: ide::Analysis::assists_with_fixes
+  10: rust_analyzer::handlers::request::handle_code_action
+  11: std::panicking::try
+  12: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.

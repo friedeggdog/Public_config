@@ -1,0 +1,18 @@
+2023-09-30 12:02:07.708 [info] [SharedProcess] using utility process
+2023-09-30 12:02:08.533 [info] update#setState idle
+2023-09-30 12:02:13.529 [info] [UtilityProcess id: 1, type: extensionHost, pid: <none>]: creating new...
+2023-09-30 12:02:13.546 [info] [UtilityProcess id: 1, type: extensionHost, pid: 28005]: successfully created
+2023-09-30 12:02:13.637 [info] [UtilityProcess type: shared-process, pid: <none>]: creating new...
+2023-09-30 12:02:13.645 [info] [UtilityProcess id: 1, type: fileWatcher, pid: <none>]: creating new...
+2023-09-30 12:02:13.657 [info] [UtilityProcess type: shared-process, pid: 28015]: successfully created
+2023-09-30 12:02:13.658 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 28016]: successfully created
+2023-09-30 12:02:38.533 [info] update#setState checking for updates
+2023-09-30 12:02:38.541 [info] update#setState available for download
+2023-09-30 20:37:40.924 [info] [UtilityProcess id: 1, type: extensionHost, pid: 28005]: waiting to exit...
+2023-09-30 20:37:40.938 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 28016]: attempting to kill the process...
+2023-09-30 20:37:40.940 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 28016]: successfully killed the process
+2023-09-30 20:37:41.362 [info] [UtilityProcess id: 1, type: extensionHost, pid: 28005]: received exit event with code 0
+2023-09-30 20:37:41.363 [info] Extension host with pid 28005 exited with code: 0, signal: unknown.
+2023-09-30 20:37:41.369 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 28016]: received exit event with code 0
+2023-09-30 20:37:43.010 [warning] [storage main] detected slow close() operation: Time: 2084ms, DB size: 196608b, Large Keys: iconThemeData:90038, history.recentlyOpenedPathsList:10100, colorThemeData:9922, ms-python.python:5897, workbench.activity.placeholderViewlets:4322
+2023-09-30 20:37:43.231 [warning] [storage main] detected slow close() operation: Time: 2306ms, DB size: 81920b, Large Keys: memento/workbench.editors.files.textFileEditor:35372, history.entries:11855, workbench.view.extensions.state:1951, codelens/cache2:1855, __$__targetStorageMarker:1629

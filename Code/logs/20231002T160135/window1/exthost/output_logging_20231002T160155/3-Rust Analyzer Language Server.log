@@ -1,0 +1,2598 @@
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/completion CompletionParams {
+    text_document_position: TextDocumentPositionParams {
+        text_document: TextDocumentIdentifier {
+            uri: Url {
+                scheme: "file",
+                cannot_be_a_base: false,
+                username: "",
+                password: None,
+                host: None,
+                port: None,
+                path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+                query: None,
+                fragment: None,
+            },
+        },
+        position: Position {
+            line: 6,
+            character: 26,
+        },
+    },
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+    context: Some(
+        CompletionContext {
+            trigger_kind: Invoked,
+            trigger_character: None,
+        },
+    ),
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::method_resolution::iterate_method_candidates_dyn
+  19: hir::Type::iterate_path_candidates_dyn
+  20: hir::Type::iterate_path_candidates
+  21: ide_completion::context::CompletionContext::iterate_path_candidates
+  22: ide_completion::completions::expr::complete_expr_path
+  23: ide_completion::completions::complete_name_ref
+  24: ide_completion::completions
+  25: std::panicking::try
+  26: rust_analyzer::handlers::request::handle_completion
+  27: std::panicking::try
+  28: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/codeAction CodeActionParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 6,
+            character: 30,
+        },
+        end: Position {
+            line: 6,
+            character: 30,
+        },
+    },
+    context: CodeActionContext {
+        diagnostics: [],
+        only: None,
+        trigger_kind: Some(
+            Automatic,
+        ),
+    },
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+[Error - 4:04:36 PM] Request textDocument/completion failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::DefWithBody::diagnostics
+  38: hir::ModuleDef::diagnostics
+  39: hir::Module::diagnostics
+  40: ide_diagnostics::diagnostics
+  41: std::panicking::try
+  42: ide::Analysis::assists_with_fixes
+  43: rust_analyzer::handlers::request::handle_code_action
+  44: std::panicking::try
+  45: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/semanticTokens/full/delta SemanticTokensDeltaParams {
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    previous_result_id: "14",
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: ide_db::defs::NameClass::classify
+  40: ide::syntax_highlighting::highlight::name_like
+  41: ide::syntax_highlighting::traverse
+  42: ide::syntax_highlighting::highlight
+  43: salsa::Cancelled::catch
+  44: rust_analyzer::handlers::request::handle_semantic_tokens_full_delta
+  45: std::panicking::try
+  46: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:04:36 PM] Request textDocument/semanticTokens/full/delta failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/inlayHint InlayHintParams {
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 0,
+            character: 0,
+        },
+        end: Position {
+            line: 20,
+            character: 0,
+        },
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: ide::inlay_hints::param_name::hints
+  40: ide::inlay_hints::hints
+  41: <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::fold
+  42: ide::inlay_hints::inlay_hints
+  43: salsa::Cancelled::catch
+  44: rust_analyzer::handlers::request::handle_inlay_hints
+  45: std::panicking::try
+  46: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:04:37 PM] Request textDocument/inlayHint failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/codeAction CodeActionParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 6,
+            character: 30,
+        },
+        end: Position {
+            line: 6,
+            character: 30,
+        },
+    },
+    context: CodeActionContext {
+        diagnostics: [],
+        only: None,
+        trigger_kind: Some(
+            Automatic,
+        ),
+    },
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::DefWithBody::diagnostics
+  38: hir::ModuleDef::diagnostics
+  39: hir::Module::diagnostics
+  40: ide_diagnostics::diagnostics
+  41: std::panicking::try
+  42: ide::Analysis::assists_with_fixes
+  43: rust_analyzer::handlers::request::handle_code_action
+  44: std::panicking::try
+  45: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/inlayHint InlayHintParams {
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 0,
+            character: 0,
+        },
+        end: Position {
+            line: 20,
+            character: 0,
+        },
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: ide::inlay_hints::param_name::hints
+  40: ide::inlay_hints::hints
+  41: <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::fold
+  42: ide::inlay_hints::inlay_hints
+  43: salsa::Cancelled::catch
+  44: rust_analyzer::handlers::request::handle_inlay_hints
+  45: std::panicking::try
+  46: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:04:37 PM] Request textDocument/inlayHint failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/semanticTokens/full/delta SemanticTokensDeltaParams {
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    previous_result_id: "14",
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: ide_db::defs::NameClass::classify
+  40: ide::syntax_highlighting::highlight::name_like
+  41: ide::syntax_highlighting::traverse
+  42: ide::syntax_highlighting::highlight
+  43: salsa::Cancelled::catch
+  44: rust_analyzer::handlers::request::handle_semantic_tokens_full_delta
+  45: std::panicking::try
+  46: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:04:38 PM] Request textDocument/semanticTokens/full/delta failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/codeAction CodeActionParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 0,
+            character: 0,
+        },
+        end: Position {
+            line: 0,
+            character: 0,
+        },
+    },
+    context: CodeActionContext {
+        diagnostics: [],
+        only: None,
+        trigger_kind: Some(
+            Automatic,
+        ),
+    },
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::DefWithBody::diagnostics
+  38: hir::ModuleDef::diagnostics
+  39: hir::Module::diagnostics
+  40: ide_diagnostics::diagnostics
+  41: std::panicking::try
+  42: ide::Analysis::assists_with_fixes
+  43: rust_analyzer::handlers::request::handle_code_action
+  44: std::panicking::try
+  45: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/codeAction CodeActionParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 6,
+            character: 30,
+        },
+        end: Position {
+            line: 6,
+            character: 30,
+        },
+    },
+    context: CodeActionContext {
+        diagnostics: [],
+        only: None,
+        trigger_kind: Some(
+            Automatic,
+        ),
+    },
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::DefWithBody::diagnostics
+  38: hir::ModuleDef::diagnostics
+  39: hir::Module::diagnostics
+  40: ide_diagnostics::diagnostics
+  41: std::panicking::try
+  42: ide::Analysis::assists_with_fixes
+  43: rust_analyzer::handlers::request::handle_code_action
+  44: std::panicking::try
+  45: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/inlayHint InlayHintParams {
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 0,
+            character: 0,
+        },
+        end: Position {
+            line: 20,
+            character: 0,
+        },
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: ide::inlay_hints::param_name::hints
+  40: ide::inlay_hints::hints
+  41: <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::fold
+  42: ide::inlay_hints::inlay_hints
+  43: salsa::Cancelled::catch
+  44: rust_analyzer::handlers::request::handle_inlay_hints
+  45: std::panicking::try
+  46: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:07:18 PM] Request textDocument/inlayHint failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/inlayHint InlayHintParams {
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 0,
+            character: 0,
+        },
+        end: Position {
+            line: 20,
+            character: 0,
+        },
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: ide::inlay_hints::param_name::hints
+  40: ide::inlay_hints::hints
+  41: <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::fold
+  42: ide::inlay_hints::inlay_hints
+  43: salsa::Cancelled::catch
+  44: rust_analyzer::handlers::request::handle_inlay_hints
+  45: std::panicking::try
+  46: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:07:35 PM] Request textDocument/inlayHint failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/hover HoverParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    position: Position(
+        Position {
+            line: 5,
+            character: 38,
+        },
+    ),
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: hir::semantics::SemanticsImpl::type_of_expr
+  40: ide::hover::render::type_info_of
+  41: ide::hover::hover
+  42: salsa::Cancelled::catch
+  43: rust_analyzer::handlers::request::handle_hover
+  44: std::panicking::try
+  45: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/hover HoverParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    position: Position(
+        Position {
+            line: 5,
+            character: 39,
+        },
+    ),
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: hir::semantics::SemanticsImpl::type_of_expr
+  40: ide::hover::render::type_info_of
+  41: ide::hover::hover
+  42: salsa::Cancelled::catch
+  43: rust_analyzer::handlers::request::handle_hover
+  44: std::panicking::try
+  45: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:08:07 PM] Request textDocument/hover failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/hover HoverParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    position: Position(
+        Position {
+            line: 5,
+            character: 45,
+        },
+    ),
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: hir::semantics::Semantics<DB>::resolve_method_call_field_fallback
+  40: ide_db::defs::NameRefClass::classify
+  41: ide_db::defs::IdentClass::classify_node
+  42: core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut
+  43: <itertools::unique_impl::UniqueBy<I,V,F> as core::iter::traits::iterator::Iterator>::next
+  44: ide::hover::hover
+  45: salsa::Cancelled::catch
+  46: rust_analyzer::handlers::request::handle_hover
+  47: std::panicking::try
+  48: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:08:09 PM] Request textDocument/hover failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/hover HoverParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    position: Position(
+        Position {
+            line: 6,
+            character: 49,
+        },
+    ),
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: hir::semantics::Semantics<DB>::resolve_method_call_field_fallback
+  40: ide_db::defs::NameRefClass::classify
+  41: ide_db::defs::IdentClass::classify_node
+  42: core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut
+  43: <itertools::unique_impl::UniqueBy<I,V,F> as core::iter::traits::iterator::Iterator>::next
+  44: ide::hover::hover
+  45: salsa::Cancelled::catch
+  46: rust_analyzer::handlers::request::handle_hover
+  47: std::panicking::try
+  48: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:08:10 PM] Request textDocument/hover failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/hover HoverParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    position: Position(
+        Position {
+            line: 6,
+            character: 49,
+        },
+    ),
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: hir::semantics::Semantics<DB>::resolve_method_call_field_fallback
+  40: ide_db::defs::NameRefClass::classify
+  41: ide_db::defs::IdentClass::classify_node
+  42: core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut
+  43: <itertools::unique_impl::UniqueBy<I,V,F> as core::iter::traits::iterator::Iterator>::next
+  44: ide::hover::hover
+  45: salsa::Cancelled::catch
+  46: rust_analyzer::handlers::request::handle_hover
+  47: std::panicking::try
+  48: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:08:10 PM] Request textDocument/hover failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/hover HoverParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    position: Position(
+        Position {
+            line: 6,
+            character: 39,
+        },
+    ),
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: hir::semantics::Semantics<DB>::resolve_method_call_field_fallback
+  40: ide_db::defs::NameRefClass::classify
+  41: ide_db::defs::IdentClass::classify_node
+  42: core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut
+  43: <itertools::unique_impl::UniqueBy<I,V,F> as core::iter::traits::iterator::Iterator>::next
+  44: ide::hover::hover
+  45: salsa::Cancelled::catch
+  46: rust_analyzer::handlers::request::handle_hover
+  47: std::panicking::try
+  48: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:08:14 PM] Request textDocument/hover failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/hover HoverParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    position: Position(
+        Position {
+            line: 6,
+            character: 39,
+        },
+    ),
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: hir::semantics::Semantics<DB>::resolve_method_call_field_fallback
+  40: ide_db::defs::NameRefClass::classify
+  41: ide_db::defs::IdentClass::classify_node
+  42: core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut
+  43: <itertools::unique_impl::UniqueBy<I,V,F> as core::iter::traits::iterator::Iterator>::next
+  44: ide::hover::hover
+  45: salsa::Cancelled::catch
+  46: rust_analyzer::handlers::request::handle_hover
+  47: std::panicking::try
+  48: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:08:15 PM] Request textDocument/hover failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/hover HoverParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    position: Position(
+        Position {
+            line: 6,
+            character: 34,
+        },
+    ),
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: ide_db::defs::NameRefClass::classify
+  40: ide_db::defs::IdentClass::classify_node
+  41: core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut
+  42: <itertools::unique_impl::UniqueBy<I,V,F> as core::iter::traits::iterator::Iterator>::next
+  43: ide::hover::hover
+  44: salsa::Cancelled::catch
+  45: rust_analyzer::handlers::request::handle_hover
+  46: std::panicking::try
+  47: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:08:16 PM] Request textDocument/hover failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/hover HoverParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    position: Position(
+        Position {
+            line: 6,
+            character: 36,
+        },
+    ),
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: ide_db::defs::NameRefClass::classify
+  40: ide_db::defs::IdentClass::classify_node
+  41: core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut
+  42: <itertools::unique_impl::UniqueBy<I,V,F> as core::iter::traits::iterator::Iterator>::next
+  43: ide::hover::hover
+  44: salsa::Cancelled::catch
+  45: rust_analyzer::handlers::request::handle_hover
+  46: std::panicking::try
+  47: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:08:17 PM] Request textDocument/hover failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/hover HoverParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    position: Position(
+        Position {
+            line: 6,
+            character: 36,
+        },
+    ),
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: ide_db::defs::NameRefClass::classify
+  40: ide_db::defs::IdentClass::classify_node
+  41: core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut
+  42: <itertools::unique_impl::UniqueBy<I,V,F> as core::iter::traits::iterator::Iterator>::next
+  43: ide::hover::hover
+  44: salsa::Cancelled::catch
+  45: rust_analyzer::handlers::request::handle_hover
+  46: std::panicking::try
+  47: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:08:17 PM] Request textDocument/hover failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/documentHighlight DocumentHighlightParams {
+    text_document_position_params: TextDocumentPositionParams {
+        text_document: TextDocumentIdentifier {
+            uri: Url {
+                scheme: "file",
+                cannot_be_a_base: false,
+                username: "",
+                password: None,
+                host: None,
+                port: None,
+                path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+                query: None,
+                fragment: None,
+            },
+        },
+        position: Position {
+            line: 6,
+            character: 36,
+        },
+    },
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: ide_db::defs::NameRefClass::classify
+  40: ide_db::defs::IdentClass::classify_node
+  41: <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::fold
+  42: <hashbrown::map::HashMap<K,V,S,A> as core::iter::traits::collect::Extend<(K,V)>>::extend
+  43: ide::highlight_related::highlight_related
+  44: std::panicking::try
+  45: rust_analyzer::handlers::request::handle_document_highlight
+  46: std::panicking::try
+  47: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:08:18 PM] Request textDocument/documentHighlight failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/codeAction CodeActionParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 6,
+            character: 32,
+        },
+        end: Position {
+            line: 6,
+            character: 36,
+        },
+    },
+    context: CodeActionContext {
+        diagnostics: [],
+        only: None,
+        trigger_kind: Some(
+            Automatic,
+        ),
+    },
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::DefWithBody::diagnostics
+  38: hir::ModuleDef::diagnostics
+  39: hir::Module::diagnostics
+  40: ide_diagnostics::diagnostics
+  41: std::panicking::try
+  42: ide::Analysis::assists_with_fixes
+  43: rust_analyzer::handlers::request::handle_code_action
+  44: std::panicking::try
+  45: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/hover HoverParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    position: Position(
+        Position {
+            line: 6,
+            character: 54,
+        },
+    ),
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: ide_db::defs::NameClass::classify
+  40: ide_db::defs::IdentClass::classify_node
+  41: core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut
+  42: <itertools::unique_impl::UniqueBy<I,V,F> as core::iter::traits::iterator::Iterator>::next
+  43: ide::hover::hover
+  44: salsa::Cancelled::catch
+  45: rust_analyzer::handlers::request::handle_hover
+  46: std::panicking::try
+  47: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:08:19 PM] Request textDocument/hover failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/codeAction CodeActionParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 6,
+            character: 31,
+        },
+        end: Position {
+            line: 6,
+            character: 36,
+        },
+    },
+    context: CodeActionContext {
+        diagnostics: [],
+        only: None,
+        trigger_kind: Some(
+            Automatic,
+        ),
+    },
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::DefWithBody::diagnostics
+  38: hir::ModuleDef::diagnostics
+  39: hir::Module::diagnostics
+  40: ide_diagnostics::diagnostics
+  41: std::panicking::try
+  42: ide::Analysis::assists_with_fixes
+  43: rust_analyzer::handlers::request::handle_code_action
+  44: std::panicking::try
+  45: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/completion CompletionParams {
+    text_document_position: TextDocumentPositionParams {
+        text_document: TextDocumentIdentifier {
+            uri: Url {
+                scheme: "file",
+                cannot_be_a_base: false,
+                username: "",
+                password: None,
+                host: None,
+                port: None,
+                path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+                query: None,
+                fragment: None,
+            },
+        },
+        position: Position {
+            line: 6,
+            character: 33,
+        },
+    },
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+    context: Some(
+        CompletionContext {
+            trigger_kind: Invoked,
+            trigger_character: None,
+        },
+    ),
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: hir::semantics::SemanticsImpl::type_of_expr
+  40: ide_db::active_parameter::callable_for_node
+  41: ide_db::active_parameter::callable_for_token
+  42: ide_db::active_parameter::ActiveParameter::at_token
+  43: ide_completion::context::analysis::analyze
+  44: ide_completion::context::analysis::expand_and_analyze
+  45: ide_completion::context::CompletionContext::new
+  46: ide_completion::completions
+  47: std::panicking::try
+  48: rust_analyzer::handlers::request::handle_completion
+  49: std::panicking::try
+  50: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:08:21 PM] Request textDocument/completion failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/semanticTokens/full/delta SemanticTokensDeltaParams {
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    previous_result_id: "14",
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::source_analyzer::SourceAnalyzer::new_for_body
+  38: hir::semantics::SemanticsImpl::analyze_impl
+  39: ide_db::defs::NameClass::classify
+  40: ide::syntax_highlighting::highlight::name_like
+  41: ide::syntax_highlighting::traverse
+  42: ide::syntax_highlighting::highlight
+  43: salsa::Cancelled::catch
+  44: rust_analyzer::handlers::request::handle_semantic_tokens_full_delta
+  45: std::panicking::try
+  46: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Error - 4:08:21 PM] Request textDocument/semanticTokens/full/delta failed.
+  Message: request handler panicked: called `Option::unwrap()` on a `None` value
+  Code: -32603 
+Panic context:
+> 
+version: 0.4.1679-standalone
+request: textDocument/codeAction CodeActionParams {
+    text_document: TextDocumentIdentifier {
+        uri: Url {
+            scheme: "file",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: None,
+            port: None,
+            path: "/home/jagannathanm/programs/Rust/minigrep/src/main.rs",
+            query: None,
+            fragment: None,
+        },
+    },
+    range: Range {
+        start: Position {
+            line: 6,
+            character: 33,
+        },
+        end: Position {
+            line: 6,
+            character: 33,
+        },
+    },
+    context: CodeActionContext {
+        diagnostics: [],
+        only: None,
+        trigger_kind: Some(
+            Automatic,
+        ),
+    },
+    work_done_progress_params: WorkDoneProgressParams {
+        work_done_token: None,
+    },
+    partial_result_params: PartialResultParams {
+        partial_result_token: None,
+    },
+}
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::DefWithBody::diagnostics
+  38: hir::ModuleDef::diagnostics
+  39: hir::Module::diagnostics
+  40: ide_diagnostics::diagnostics
+  41: std::panicking::try
+  42: ide::Analysis::assists_with_fixes
+  43: rust_analyzer::handlers::request::handle_code_action
+  44: std::panicking::try
+  45: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+Panic context:
+> fetch_native_diagnostics
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::DefWithBody::diagnostics
+  38: hir::ModuleDef::diagnostics
+  39: hir::Module::diagnostics
+  40: ide_diagnostics::diagnostics
+  41: salsa::Cancelled::catch
+  42: core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut
+  43: alloc::vec::in_place_collect::<impl alloc::vec::spec_from_iter::SpecFromIter<T,I> for alloc::vec::Vec<T>>::from_iter
+  44: rust_analyzer::diagnostics::fetch_native_diagnostics
+  45: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+Panic context:
+> fetch_native_diagnostics
+
+thread 'Worker' panicked at 'called `Option::unwrap()` on a `None` value', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/chalk-solve-0.93.0/src/clauses/builtin_traits/fn_family.rs:90:55
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::panicking::panic
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:117:5
+   3: chalk_solve::clauses::builtin_traits::fn_family::add_fn_trait_program_clauses
+   4: chalk_solve::clauses::builder::ClauseBuilder<I>::push_binders
+   5: chalk_solve::clauses::program_clauses_that_could_match
+   6: chalk_recursive::solve::SolveIteration::solve_iteration
+   7: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_goal
+   8: chalk_recursive::fixed_point::RecursiveContext<K,V>::solve_root_goal
+   9: hir_ty::traits::trait_solve_query
+  10: salsa::runtime::Runtime::execute_query_implementation
+  11: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  12: salsa::derived::slot::Slot<Q,MP>::read
+  13: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  14: salsa::QueryTable<Q>::get
+  15: <DB as hir_ty::db::HirDatabase>::trait_solve_query
+  16: hir_ty::db::trait_solve_wait
+  17: <DB as hir_ty::db::HirDatabase>::trait_solve
+  18: hir_ty::infer::unify::InferenceTable::try_resolve_obligation
+  19: hir_ty::infer::unify::InferenceTable::resolve_obligations_as_possible
+  20: hir_ty::infer::pat::<impl hir_ty::infer::InferenceContext>::infer_pat
+  21: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  22: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::check_call_arguments
+  23: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  24: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_coerce
+  25: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_block
+  26: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_expr_inner
+  27: hir_ty::infer::expr::<impl hir_ty::infer::InferenceContext>::infer_return
+  28: hir_ty::infer::infer_query
+  29: salsa::runtime::Runtime::execute_query_implementation
+  30: salsa::derived::slot::Slot<Q,MP>::read_upgrade
+  31: salsa::derived::slot::Slot<Q,MP>::read
+  32: <salsa::derived::DerivedStorage<Q,MP> as salsa::plumbing::QueryStorageOps<Q>>::try_fetch
+  33: <DB as hir_ty::db::HirDatabase>::infer_query::__shim
+  34: <DB as hir_ty::db::HirDatabase>::infer_query
+  35: hir_ty::db::infer_wait
+  36: <DB as hir_ty::db::HirDatabase>::infer
+  37: hir::DefWithBody::diagnostics
+  38: hir::ModuleDef::diagnostics
+  39: hir::Module::diagnostics
+  40: ide_diagnostics::diagnostics
+  41: salsa::Cancelled::catch
+  42: core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut
+  43: alloc::vec::in_place_collect::<impl alloc::vec::spec_from_iter::SpecFromIter<T,I> for alloc::vec::Vec<T>>::from_iter
+  44: rust_analyzer::diagnostics::fetch_native_diagnostics
+  45: core::ops::function::FnOnce::call_once{{vtable.shim}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+thread 'LspServer' panicked at 'called `Result::unwrap()` on an `Err` value: "SendError(..)"', /__w/rust-analyzer/rust-analyzer/crates/stdx/src/thread/pool.rs:86:35
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::result::unwrap_failed
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/result.rs:1651:5
+   3: stdx::thread::pool::Pool::spawn
+   4: rust_analyzer::dispatch::RequestDispatcher::on_with_thread_intent
+   5: rust_analyzer::main_loop::<impl rust_analyzer::global_state::GlobalState>::on_request
+   6: rust_analyzer::main_loop::<impl rust_analyzer::global_state::GlobalState>::handle_event
+   7: rust_analyzer::main_loop::<impl rust_analyzer::global_state::GlobalState>::run
+   8: rust_analyzer::main_loop::main_loop
+   9: rust_analyzer::run_server
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+thread '<unnamed>' panicked at 'receiver was dropped, failed to send a message: "SendError(..)"', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/lsp-server-0.7.4/src/stdio.rs:29:37
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::result::unwrap_failed
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/result.rs:1651:5
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Any { .. }', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/jod-thread-0.1.2/src/lib.rs:33:22
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/std/src/panicking.rs:593:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/panicking.rs:67:14
+   2: core::result::unwrap_failed
+             at /rustc/d5c2e9c342b358556da91d61ed4133f6f50fc0c3/library/core/src/result.rs:1651:5
+   3: stdx::thread::JoinHandle<T>::join
+   4: rust_analyzer::with_extra_thread
+   5: rust_analyzer::main
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+[Info  - 4:08:28 PM] Connection to server got closed. Server will restart.
+true

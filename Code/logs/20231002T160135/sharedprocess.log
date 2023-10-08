@@ -1,0 +1,15 @@
+2023-10-02 16:01:57.778 [warning] No ptyHost heartbeat after 6 seconds
+2023-10-02 16:02:02.103 [info] Deleted from disk vscodevim.vim /home/jagannathanm/.vscode/extensions/vscodevim.vim-1.26.0
+2023-10-02 16:02:02.226 [info] Deleted from disk rust-lang.rust-analyzer /home/jagannathanm/.vscode/extensions/rust-lang.rust-analyzer-0.4.1678-linux-x64
+2023-10-02 16:02:05.060 [info] Getting Manifest... rust-lang.rust-analyzer
+2023-10-02 16:02:08.508 [info] Installing extension: rust-lang.rust-analyzer
+2023-10-02 16:02:10.009 [error] [uncaught exception in sharedProcess]: Channel name 'extensionRecommendationNotification' timed out after 1000ms
+2023-10-02 16:02:38.253 [warning] Extension signature verification failed with error 'UnknownError': rust-lang.rust-analyzer
+2023-10-02 16:02:50.005 [warning] No ptyHost heartbeat after 6 seconds
+2023-10-02 16:02:53.753 [info] Extracted extension to /home/jagannathanm/.vscode/extensions/.d1fc05a2-9531-4ff2-9e32-80faa71030a5: rust-lang.rust-analyzer
+2023-10-02 16:02:54.617 [error] No ptyHost heartbeat after 12 seconds
+2023-10-02 16:02:55.391 [info] Renamed to /home/jagannathanm/.vscode/extensions/rust-lang.rust-analyzer-0.4.1680-linux-x64
+2023-10-02 16:02:55.897 [info] Extracting extension completed. rust-lang.rust-analyzer
+2023-10-02 16:02:57.563 [info] Extension installed successfully: rust-lang.rust-analyzer
+2023-10-02 16:02:58.173 [info] Marked extension as uninstalled rust-lang.rust-analyzer-0.4.1679-linux-x64
+2023-10-02 16:03:33.965 [warning] No ptyHost heartbeat after 6 seconds

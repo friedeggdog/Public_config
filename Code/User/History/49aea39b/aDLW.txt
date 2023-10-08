@@ -1,0 +1,6 @@
+name of website = https://od.nitt.edu/login
+public and private ip = 14.139.162.153 , 203.129.195.153
+frontend = react
+backend = django
+database = postgresql
+proxy = apache

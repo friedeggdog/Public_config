@@ -68,9 +68,9 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 
 # change focus
 bindsym $mod+j focus left
-bindsym $mod+k focus down
+bindsym $mod+h focus down
 bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+k focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -80,9 +80,9 @@ bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
+bindsym $mod+Shift+h move down
 bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+k move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -91,7 +91,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+h+o split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -197,13 +197,15 @@ exec_always feh --bg-scale /usr/share/endeavouros/backgrounds/eos_wallpapers_com
 exec_always /home/jagannathanm/.config/polybar/launch.sh
 exec_always picom
 exec_always /home/jagannathanm/programs/hideIt.sh --class '^Polybar$' -p 9 -d top -H -s 1 --wait
+exec_always setxkbmap -option caps:swapescape
+
 
 for_window [title="miniDiscord"] floating enable
 for_window [title="miniDiscord"] move right 780 px
 for_window [title="miniDiscord"] move down 40 ppt
 
 bindsym $mod+i exec /home/jagannathanm/programs/minDiscord/discord.sh
-
+bindsym $mod+g exec feh /home/jagannathanm/Pictures/YLInLlY.png
 gaps inner 10
 gaps outer 0
 smart_gaps on

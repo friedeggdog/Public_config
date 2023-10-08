@@ -1,0 +1,20 @@
+2023-09-29 22:36:16.205 [info] [SharedProcess] using utility process
+2023-09-29 22:36:17.547 [info] update#setState idle
+2023-09-29 22:36:25.531 [info] [UtilityProcess id: 1, type: extensionHost, pid: <none>]: creating new...
+2023-09-29 22:36:25.543 [info] [UtilityProcess id: 1, type: extensionHost, pid: 191995]: successfully created
+2023-09-29 22:36:26.096 [info] [UtilityProcess type: shared-process, pid: <none>]: creating new...
+2023-09-29 22:36:26.104 [info] [UtilityProcess id: 1, type: fileWatcher, pid: <none>]: creating new...
+2023-09-29 22:36:26.116 [info] [UtilityProcess type: shared-process, pid: 191996]: successfully created
+2023-09-29 22:36:26.117 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 191997]: successfully created
+2023-09-29 22:36:47.549 [info] update#setState checking for updates
+2023-09-29 22:36:48.953 [info] update#setState available for download
+2023-09-29 22:37:07.800 [info] [UtilityProcess id: 1, type: extensionHost, pid: 191995]: enabling inspect port
+2023-09-29 22:37:09.485 [info] [UtilityProcess id: 1, type: extensionHost, pid: 191995]: enabling inspect port
+2023-09-29 22:40:07.920 [info] [UtilityProcess id: 1, type: extensionHost, pid: 191995]: waiting to exit...
+2023-09-29 22:40:08.223 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 191997]: attempting to kill the process...
+2023-09-29 22:40:08.323 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 191997]: successfully killed the process
+2023-09-29 22:40:08.723 [info] [UtilityProcess id: 1, type: extensionHost, pid: 191995]: received exit event with code 0
+2023-09-29 22:40:08.724 [info] Extension host with pid 191995 exited with code: 0, signal: unknown.
+2023-09-29 22:40:08.725 [info] [UtilityProcess id: 1, type: fileWatcher, pid: 191997]: received exit event with code 0
+2023-09-29 22:40:10.352 [warning] [storage main] detected slow close() operation: Time: 2429ms, DB size: 196608b, Large Keys: iconThemeData:90038, history.recentlyOpenedPathsList:10100, colorThemeData:9922, ms-python.python:5897, memento/experiment.service.memento:3913
+2023-09-29 22:40:10.354 [warning] [storage main] detected slow close() operation: Time: 2432ms, DB size: 69632b, Large Keys: memento/workbench.editors.files.textFileEditor:24299, history.entries:8099, workbench.view.extensions.state:1951, memento/workbench.parts.editor:1834, codelens/cache2:1619

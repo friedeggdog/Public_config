@@ -1,0 +1,32 @@
+<!Doctype Html>
+<html>
+<head>
+<title>LOGIN</title>
+</head>
+<body>
+    <div id="wrapper">
+    <div id = "form">
+        <h1>Login</h1>
+        <form name="form1" action = "" onsubmit = "return required()" method = "POST">
+            <p>
+                <label class="cen"> Roll: </label>
+                <input class="cen" type = "text" id = "user" name = "user" />
+            </p>
+            <p>
+                <label class="cen"> Mess: </label>
+                <input class="cen" type = "text" id = "roll" name = "roll" />
+            </p>
+        </form>
+    </div>
+    </div>
+    <script>
+            function required()
+            {
+                if(document.form1.user.value.length==0 || document.form1.roll.value.length==0) {
+                    alert("Fields Empty");
+                    return false;
+                }
+            }
+    </script>
+</body>
+</html>

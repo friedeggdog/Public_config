@@ -8,7 +8,20 @@
             "file:///home/jagannathanm/Documents/sysdelta": "__default__profile__",
             "file:///home/jagannathanm/Documents/databases": "__default__profile__",
             "file:///home/jagannathanm/.config": "__default__profile__",
-            "file:///home/jagannathanm/Documents": "__default__profile__"
+            "file:///home/jagannathanm/private-repo2": "__default__profile__",
+            "file:///home/jagannathanm/Documents": "__default__profile__",
+            "file:///home/jagannathanm/hacker": "__default__profile__",
+            "file:///home/jagannathanm/Documents/on-site2": "__default__profile__",
+            "file:///home/jagannathanm/Documents/on-spider": "__default__profile__",
+            "file:///home/jagannathanm/Project": "__default__profile__",
+            "file:///home/jagannathanm/programs": "__default__profile__",
+            "file:///home/jagannathanm/programs/DELTA/Festember-tshirt-verification": "__default__profile__",
+            "file:///home/jagannathanm/programs/DELTA": "__default__profile__",
+            "file:///home/jagannathanm/programs/Rust": "__default__profile__",
+            "file:///home/jagannathanm/programs/Rust/rustlings": "__default__profile__",
+            "file:///home/jagannathanm/programs/Rust/minigrep": "__default__profile__",
+            "file:///home/jagannathanm/programs/Rust/rustlings/exercises": "__default__profile__",
+            "file:///home/jagannathanm/programs/Rust/fart": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -18,10 +31,7 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/jagannathanm/.config"
-            },
-            {
-                "folderUri": "file:///home/jagannathanm/Documents"
+                "folderUri": "file:///home/jagannathanm/programs/Rust/fart"
             }
         ],
         "emptyWindows": []
@@ -154,6 +164,28 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/jagannathanm/shyam.txt",
+                                        "path": "/home/jagannathanm/shyam.txt",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/shyam.txt"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/jagannathanm/%E2%80%94enable-ozone",
+                                        "path": "/home/jagannathanm/—enable-ozone",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/—enable-ozone"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/jagannathanm/Downloads/Hostel%20Shifting.csv",
                                         "path": "/home/jagannathanm/Downloads/Hostel Shifting.csv",
                                         "scheme": "file"
@@ -237,28 +269,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/ntt/Mux4Way16.hdl"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/jagannathanm/Documents/ntt/Mux8Way16.hdl",
-                                        "path": "/home/jagannathanm/Documents/ntt/Mux8Way16.hdl",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/ntt/Mux8Way16.hdl"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/jagannathanm/Documents/ntt/Mux.hdl",
-                                        "path": "/home/jagannathanm/Documents/ntt/Mux.hdl",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/ntt/Mux.hdl"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -445,10 +455,6 @@
                     {
                         "id": "workbench.action.closeActiveEditor",
                         "label": "&&Close Editor"
-                    },
-                    {
-                        "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -644,8 +650,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar",
-                                    "checked": true
+                                    "label": "&&Primary Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -784,13 +789,6 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
-                                    "id": "workbench.action.splitEditorInGroup",
-                                    "label": "Split in &&Group"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
                                     "id": "workbench.action.editorLayoutSingle",
                                     "label": "&&Single"
                                 },
@@ -856,10 +854,6 @@
                         "label": "E&&xtensions"
                     },
                     {
-                        "id": "workbench.view.extension.test",
-                        "label": "T&&esting"
-                    },
-                    {
                         "id": "vscode.menubar.separator"
                     },
                     {
@@ -883,7 +877,8 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap"
+                        "label": "&&Word Wrap",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.toggleStickyScroll",
@@ -895,7 +890,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "&&Back",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -904,7 +900,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1417,11 +1414,6 @@
                 "label": "Ctrl+W",
                 "userSettingsLabel": "ctrl+w"
             },
-            "workbench.action.closeFolder": {
-                "label": "Ctrl+K F",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k f"
-            },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
                 "userSettingsLabel": "alt+f4"
@@ -1568,11 +1560,6 @@
                 "label": "Ctrl+K Ctrl+\\",
                 "isNative": false,
                 "userSettingsLabel": "ctrl+k ctrl+\\"
-            },
-            "workbench.action.splitEditorInGroup": {
-                "label": "Ctrl+K Ctrl+Shift+\\",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+shift+\\"
             },
             "workbench.action.toggleEditorGroupLayout": {
                 "label": "Shift+Alt+0",
@@ -1796,7 +1783,7 @@
     "theme": "vs-dark",
     "themeBackground": "#1e1e1e",
     "windowSplash": {
-        "zoomLevel": 0,
+        "zoomLevel": -1,
         "baseTheme": "vs-dark",
         "colorInfo": {
             "foreground": "#cccccc",
@@ -1811,7 +1798,7 @@
         "layoutInfo": {
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
-            "titleBarHeight": 0,
+            "titleBarHeight": 36,
             "activityBarWidth": 48,
             "sideBarWidth": 170,
             "statusBarHeight": 22,
@@ -1820,17 +1807,16 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/jagannathanm/Documents",
-            "backupPath": "/home/jagannathanm/.config/Code/Backups/55ece482288fa607aeddf92808419f47",
+            "folder": "file:///home/jagannathanm/programs/Rust/fart",
+            "backupPath": "/home/jagannathanm/.config/Code/Backups/b6cb92c23c525282170a9e1b0b3d9549",
             "uiState": {
                 "mode": 1,
                 "x": 0,
-                "y": 20,
-                "width": 1920,
-                "height": 1060
+                "y": 0,
+                "width": 1276,
+                "height": 716
             }
         },
         "openedWindows": []
-    },
-    "window.experimental.useSandbox": true
+    }
 }
